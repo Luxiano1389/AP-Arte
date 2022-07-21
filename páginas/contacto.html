@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Contacto</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Permanent+Marker&family=Poiret+One&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3552da69ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../imágenes/logo-ap5.jpg" alt="Logo AP arte"></a> 
+        </div>
+        <div>
+            <a class="menu__lineas" href="#abierto"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <nav class="menu" id="abierto" >
+            <ul class="menu__enlaces">
+                <li><a class="menu__enlaces--cerrado" href="#cerrado"><span class="menu__cerrar">&#10006</span></a></li>
+                <li class="hvr-bounce-to-right"><a href="../index.html">Inicio</a></li>
+                <li class="hvr-bounce-to-right"><a href="./mi-arte.html">Mi Arte</a></li>
+                <li class="hvr-bounce-to-right"><a href="./pedidos.html">Pedidos</a></li>
+                <li class="hvr-bounce-to-right"><a href="./preguntas-habituales.html">Preguntas Frecuentes</a></li>
+                <li class="hvr-bounce-to-right"><a href="./reseñas.html">Reseñas</a></li>
+                <li class="hvr-bounce-to-right menu--activo"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="contacto">
+                <h1 class="contacto__titulo">Contáctame 🌞</h1>
+                <div class="contacto__linea"></div>
+                <div class="contacto__redes">
+                    <div class="contacto__email">
+                        <div class="contacto__icon">
+                            <i class="fa-solid fa-square-envelope"></i>
+                        </div>
+                        <div class="contacto__info">
+                            <p>Si tenés dudas o necesitás ayuda, esceribime a mí correo electrónico.</p>
+                            <input type="button" value="apovedacuadros@gmail.com">
+                        </div>
+                    </div>
+                    <div class="contacto__instagram">
+                        <div class="contacto__icon">
+                            <i class="fa-brands fa-instagram-square"></i>
+                        </div>
+                        <div class="contacto__info">
+                            <p>Seguime en mi cuenta de Instagram y enterate de mis últimos trabajos.</p><br>
+                            <input type="button" value="@apcuadros">
+                        </div>
+                    </div>
+                    <div class="contacto__whatsapp">
+                        <div class="contacto__icon">
+                            <i class="fa-brands fa-whatsapp-square"></i>
+                        </div>
+                        <div class="contacto__info">
+                            <p>Escribime a mi número de Whatsapp.</p><br><br>
+                            <input type="button" value="+5492395413095">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <form class="formulario color-change-3x" action="">
+                <h2 class="formulario__subtitulo">Hablemos</h2>
+                <div class="formulario__item">
+                    <label for="nombre"></label>
+                    <input type="text" placeholder="NOMBRE" id="nombre" required>
+                </div>
+                <div class="formulario__item">
+                    <label for="email"></label>
+                    <input type="email" placeholder="E-MAIL" id="email" required>
+                </div>
+                <div class="formulario__item">
+                    <label for="celular"></label>
+                    <input type="tel" placeholder="CELULAR" id="celular" required>
+                </div>
+                <div class="formulario__item">
+                    <label for="mensaje"></label>
+                    <textarea name="mensaje" placeholder="TU MENSAJE" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <div class="formulario__enviar">
+                    <input type="submit" value="¡HABLEMOS!">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__contenedor">
+            <div class="footer__box">
+                <div class="footer__contenido">
+                    <div class="footer__logo">
+                        <img src="../imágenes/logo-ap5.jpg" alt="Logo AP cuadros">
+                    </div>
+                    <div class="footer__texto">
+                        <p>Emprendimiento personal que comenzó con mucho 💕 y 💪 en el 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__box">
+                <div class="footer__contenido1">
+                    <h2>Conectá Conmigo</h2>
+                    <a href="mailto:apovedacuadros@gmail.com"><i
+                            class="fa-solid fa-envelope"></i>apovedacuadros@gmail.com</a>
+                    <a href="https://www.instagram.com/ap.cuadros/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i>@apcuadros</a>
+                    <a href="https://api.whatsapp.com/send?phone=5492395413096" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i>+5492395413095</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <hr>
+            <p><b>Antonela Poveda Arte</b> - Argentina - © 2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>
