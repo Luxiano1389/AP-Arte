@@ -248,19 +248,17 @@ main {
 
 .sobreMi__texto {
     /* Texto */
-    justify-content: center;
     text-align: justify;
     font-family: 'Poiret One', cursive;
     font-weight: 600;
     font-size: 20px;
     width: 45%;
-    padding: 50px 20px 10px 20px;
+    padding: 50px 20px;
     height: 400px;
     color: rgb(0, 0, 0);
     line-height: 40px;
     background-color: #a6cada;
     border-radius: 10px;
-    overflow: auto;
     margin-right: 5px;
 }
 
@@ -1172,7 +1170,7 @@ li {
 
 .reseñas__comentario1 .reseñas__comillas {
     font-size: 70px;
-    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'BIZ UDPGothic', sans-serif;
     color: #f0fd3b;
     text-shadow: #383838 1px 2px 1px;
     position: absolute;
@@ -1183,7 +1181,7 @@ li {
 
 .reseñas__comentario1 .reseñas__comillas1 {
     font-size: 70px;
-    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'BIZ UDPGothic', sans-serif;
     color: #f0fd3b;
     text-shadow: #383838 1px 2px 1px;
     position: absolute;
@@ -1194,7 +1192,7 @@ li {
 
 .reseñas__comentario2 .reseñas__comillas {
     font-size: 70px;
-    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'BIZ UDPGothic', sans-serif;
     color: #f0fd3b;
     text-shadow: #383838 1px 2px 1px;
     position: absolute;
@@ -1205,7 +1203,7 @@ li {
 
 .reseñas__comentario2 .reseñas__comillas1 {
     font-size: 70px;
-    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'BIZ UDPGothic', sans-serif;
     color: #f0fd3b;
     text-shadow: #383838 1px 2px 1px;
     position: absolute;
@@ -1216,7 +1214,7 @@ li {
 
 .reseñas__comentario3 .reseñas__comillas {
     font-size: 70px;
-    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'BIZ UDPGothic', sans-serif;
     color: #f0fd3b;
     text-shadow: #383838 1px 2px 1px;
     position: absolute;
@@ -1227,7 +1225,7 @@ li {
 
 .reseñas__comentario3 .reseñas__comillas1 {
     font-size: 70px;
-    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'BIZ UDPGothic', sans-serif;
     color: #f0fd3b;
     text-shadow: #383838 1px 2px 1px;
     position: absolute;
@@ -1238,7 +1236,7 @@ li {
 
 .reseñas__comentario4 .reseñas__comillas {
     font-size: 70px;
-    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'BIZ UDPGothic', sans-serif;
     color: #f0fd3b;
     text-shadow: #383838 1px 2px 1px;
     position: absolute;
@@ -1249,7 +1247,7 @@ li {
 
 .reseñas__comentario4 .reseñas__comillas1 {
     font-size: 70px;
-    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'BIZ UDPGothic', sans-serif;
     color: #f0fd3b;
     text-shadow: #383838 1px 2px 1px;
     position: absolute;
@@ -1416,7 +1414,7 @@ li {
 .contacto__info input {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: rgb(255, 162, 255);
+    background-color: rgb(252, 199, 247);
     font-size: 1.1em;
     border: none;
     border-radius: 5px;
@@ -2624,8 +2622,8 @@ textarea:hover {
     }
 
     .sobreMi__linea {
-        border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 20px;
+        border-top: 1px solid rgb(255, 162, 255);
+        margin: 0px 10px;
         margin-top: -10px;
     }
 
@@ -2636,24 +2634,24 @@ textarea:hover {
         justify-content: center;
         flex-direction: column;
         width: 100%;
+        height: 100%;
     }
 
     .sobreMi__texto {
         /* Texto */
         font-size: 1em;
         width: 95%;
-        padding: 15px 20px;
-        height: 300px;
+        height: auto;
         line-height: 140%;
-        overflow: none;
         margin-right: 0px;
+        padding: 20px 20px;
     }
 
     .sobreMi__foto {
         /* Imagen */
         width: 95%;
         margin-top: 5px;
-        height: 300px;
+        height: auto;
         object-fit: cover;
         margin-left: 0;
     }
@@ -2704,8 +2702,8 @@ textarea:hover {
     }
 
     .miArte__linea {
-        border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 40px;
+        border-top: 1.5px solid rgb(255, 162, 255);
+        margin: 0px 60px;
         margin-top: -25px;
     }
 
@@ -2789,8 +2787,8 @@ textarea:hover {
     }
 
     .pedidos__linea {
-        border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 40px;
+        border-top: 1.5px solid rgb(255, 162, 255);
+        margin: 0px 60px;
         margin-top: -25px;
     }
 
@@ -2839,8 +2837,8 @@ textarea:hover {
     }
 
     .prefre__linea {
-        border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 40px;
+        border-top: 1.5px solid rgb(255, 162, 255);
+        margin: 0px 60px;
         margin-top: -25px;
     }
 
@@ -2871,8 +2869,8 @@ textarea:hover {
     }
 
     .reseñas__linea {
-        border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 40px;
+        border-top: 1.5px solid rgb(255, 162, 255);
+        margin: 0px 60px;
         margin-top: -25px;
     }
 
@@ -2907,7 +2905,6 @@ textarea:hover {
     }
 
     .reseñas__comentario3 .reseñas__autor {
-    
         font-size: 1em;
     }
 
@@ -2984,8 +2981,8 @@ textarea:hover {
     }
 
     .contacto__linea {
-        border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 40px;
+        border-top: 1.5px solid rgb(255, 162, 255);
+        margin: 0px 60px;
         margin-top: -25px;
     }
 
