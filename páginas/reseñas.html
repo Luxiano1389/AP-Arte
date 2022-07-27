@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Pacifico&family=Permanent+Marker&family=Poiret+One&display=swap" rel="stylesheet">
     <!-- Michal Snik -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Estilo propio -->
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -41,48 +43,73 @@
         <section>
             <h1 class="reseñas__titulo">Reseñas 📝</h1>
             <div class="reseñas__linea"></div>
-            <div class="reseñas__grid">
-                <div class="reseñas__comentario1">
-                    <span class="reseñas__comillas">"</span>
-                    <p>Le encargué a Anto un cuadro sorpresa para mi hermano con el retrato de su perrita y gata.
-                        La foto que tenía no era de muy buena calidad, aún así el trabajo terminado fue ¡impresionante!
-                        Los colores y los rasgos exactos. ¡Súper feliz con el resultado! Gracias por todo Anto, sos una
-                        gran
-                        artista.</p>
-                    <span class="reseñas__comillas1">"</span>
-                    <span class="reseñas__autor">J. Rubio</span>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item d-flex flex-column col-8 offset-md-2">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Reseña #1
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <p class="reseñas__texto">"Le encargué a Anto un cuadro sorpresa para mi hermano con el retrato de su perrita y gata.
+                      La foto que tenía no era de muy buena calidad, aún así el trabajo terminado fue ¡impresionante!
+                      Los colores y los rasgos exactos. ¡Súper feliz con el resultado! Gracias por todo Anto, sos una gran artista"</p>
+                      <span class="reseñas__autor">J. Rubio</span> 
+                    </div>
+                  </div>
                 </div>
-                <div class="reseñas__comentario2">
-                    <span class="reseñas__comillas">"</span>
-                    <p>Cada vez que veo los cuadros me llevan al lugar donde quiero estar. Son hermosos y Anto super
-                        profesional.
-                        Confiaría una y mil veces más.</p>
-                    <span class="reseñas__comillas1">"</span>
-                    <span class="reseñas__autor">L. Pieroni</span>
+                <div class="accordion-item d-flex flex-column col-8 offset-md-2">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Reseña #2
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <p class="reseñas__texto">"Cada vez que veo los cuadros me llevan al lugar donde quiero estar. Son hermosos y Anto super
+                      profesional. Confiaría una y mil veces más"</p>
+                      <span class="reseñas__autor">L. Pieroni</span> 
+                    </div>
+                  </div>
                 </div>
-                <div class="reseñas__comentario3">
-                    <span class="reseñas__comillas">"</span>
-                    <p>Divino el trabajo que hace Anto con tanto amor. Le pedi un cuadro en base a una foto y quedo
-                        espectacular. Todos felices con el resultado.
-                        Ella super amable y siempre muy atenta a los requerimientos, y eso que le adelante la fecha de
-                        entrega.</p>
-                    <span class="reseñas__comillas1">"</span>
-                    <span class="reseñas__autor">M. De la Paz</span>
+                <div class="accordion-item d-flex flex-column col-8 offset-md-2">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Reseña #3
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <p class="reseñas__texto">"Divino el trabajo que hace Anto con tanto amor. Le pedi un cuadro en base a una foto y quedo
+                      espectacular. Todos felices con el resultado.
+                      Ella super amable y siempre muy atenta a los requerimientos, y eso que le adelante la fecha de entrega"</p>
+                      <span class="reseñas__autor">M. De la Paz</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="reseñas__comentario4">
-                    <span class="reseñas__comillas">"</span>
-                    <p>Anto es una profesional con todas las letras muy comprometida con su trabajo. Cumplió con los
-                        plazos
-                        de
-                        entrega y nos dio un producto de excelente calidad.
-                        Ya no tengo a mi perra pero con el hermoso cuadro que hizo siento que la tengo conmigo todo el
-                        tiempo.
-                    </p>
-                    <span class="reseñas__comillas1">"</span>
-                    <span class="reseñas__autor">B. Ditzel</span>
+                <div class="accordion-item d-flex flex-column col-8 offset-md-2">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Reseña #4
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                      <div class="accordion-body">
+                        <p class="reseñas__texto">"Anto es una profesional con todas las letras muy comprometida con su trabajo. Cumplió con los
+                        plazos de entrega y nos dio un producto de excelente calidad.
+                        Ya no tengo a mi perra pero con el hermoso cuadro que hizo siento que la tengo conmigo todo el tiempo"</p>
+                        <span class="reseñas__autor">B. Ditzel</span> 
+                      </div>
+                    </div>
                 </div>
-            </div>
         </section>
+
+        <div class="boton__contenedor">
+              <a href="https://api.whatsapp.com/send?phone=5492395413096" target="_blank"><img
+                      class="boton--whatsapp" src="../imágenes/icono-whatsapp4.png"
+                      alt="Icono Whatsapp"></a>
+        </div>
     </main>
 
     <footer>
@@ -122,6 +149,8 @@
       </script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/3552da69ff.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

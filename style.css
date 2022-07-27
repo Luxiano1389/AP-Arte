@@ -169,6 +169,7 @@ main {
     padding-bottom: 40px;
     color: rgb(0, 0, 0);
     text-shadow: 4px 4px rgb(255, 255, 255);
+    font-weight: 900;
 }
 
 .tracking-in-contract-bck {
@@ -244,7 +245,6 @@ main {
     padding-bottom: 20px;
     margin: 0px 300px 0 300px;
 }
-
 
 .sobreMi__texto {
     /* Texto */
@@ -451,6 +451,7 @@ footer {
     font-weight: 700;
     font-family: 'Poiret One', cursive;
     margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .footer__box .fa-brands {
@@ -484,7 +485,7 @@ footer {
     max-width: 1200px;
     margin: auto;
     text-align: center;
-    padding: 30px 0px 5px 0px;
+    padding: 0;
 }
 
 .footer__copyright p {
@@ -520,6 +521,7 @@ footer {
     font-family: 'Pacifico', cursive;
     font-size: 50px;
     text-shadow: 4px 4px #21f3fa;
+    font-weight: 800;
 }
 
 .miArte__linea {
@@ -845,7 +847,7 @@ footer {
     text-align: center;
     font-family: 'Poiret One', cursive;
     font-weight: 900;
-    letter-spacing: .9px;
+    letter-spacing: 0px; /* 0.9 antes de bootstrap */
   }
 
 .miArte__comentarios {
@@ -902,6 +904,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     background-color: #EFF3F5;
+    font-weight: 800;
 }
 
 .pedidos__contenedor {
@@ -991,6 +994,7 @@ footer {
     font-family: 'Pacifico', cursive;
     font-size: 50px;
     text-shadow: 4px 4px rgb(33, 243, 250);
+    font-weight: 800;
 }
 
 .prefre__linea {
@@ -1039,7 +1043,7 @@ footer {
     transform-style: preserve-3d;
     font-family: 'Poiret One', cursive;
     font-weight: 800;
-    letter-spacing: 0.9px;
+    letter-spacing: 0px; /* 0.9 antes de Bootstrap */
 }
 
 .prefre__frontal--pregunta {
@@ -1052,7 +1056,6 @@ footer {
     padding: 20px;
     color: rgb(0, 0, 0);
     text-shadow: 4px 2px 1px rgb(89, 222, 255);
-    font-size: 1.1em;
 }
 
 .prefre__reverso--respuesta {
@@ -1063,18 +1066,28 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+.prefre__pregunta {
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+.prefre__respuesta {
     font-size: 1.1em;
 }
 
 .prefre__respuesta,
 ul {
     list-style: none;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
 
 .prefre__respuesta ul,
 li {
     /* line-height: 1.4em; */
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 
 .prefre__reverso--respuesta {
@@ -1090,6 +1103,15 @@ li {
     transform: rotateY(180deg)
 }
 
+.btn2 {
+    border: none;
+    background-color: transparent;
+}
+
+.btn2:hover {
+    padding-left: 10px;  
+}
+
 /* ------------------------------------------- RESEÑAS ------------------------------------------- */
 
 .reseñas {
@@ -1103,6 +1125,7 @@ li {
     font-family: 'Pacifico', cursive;
     font-size: 50px;
     text-shadow: 4px 4px rgb(33, 243, 250);
+    font-weight: 800;
 }
 
 .reseñas__linea {
@@ -1113,208 +1136,47 @@ li {
     margin: 0px 300px 0 300px;
 }
 
-.reseñas__grid {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-areas: 
-    "p1"
-    "p2"
-    "p3"
-    "p4";
-    justify-content: center;
-    row-gap: 10px;
-    width: 100%;
-    background-color: #ffffff;
+.accordion {
+    background-color: #EFF3F5;
+    padding-bottom: 70px;
+    padding-top: 70px;
 }
 
-.reseñas__comentario1 {
-    grid-area: p1;
-}
-
-.reseñas__comentario2 {
-    grid-area: p2;
-}
-
-.reseñas__comentario3 {
-    grid-area: p3;
-}
-
-.reseñas__comentario4 {
-    grid-area: p4;
-}
-
-.reseñas__comentario1, .reseñas__comentario2, .reseñas__comentario3, .reseñas__comentario4 {
-    border-radius: 5px;
-    border: 1px solid rgb(148, 148, 148);
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.reseñas__comentario1 p {
-    font-size: 1.1em;
-    line-height: 30px;
-    padding: 50px 20px 20px 20px;
-    text-align: justify;
-    font-family: 'Poiret One', cursive;
-    font-weight: 800;
-    color: black;
-    letter-spacing: 0.9px;
-}
-
-.reseñas__comentario2 p {
-    font-size: 1.1em;
-    line-height: 30px;
-    padding: 50px 20px 20px 20px;
-    text-align: justify;
-    font-family: 'Poiret One', cursive;
-    font-weight: 800;
-    color: black;
-    letter-spacing: 0.9px;
-}
-
-.reseñas__comentario3 p {
-    font-size: 1.1em;
-    line-height: 30px;
-    padding: 50px 20px 20px 20px;
-    text-align: justify;
-    font-family: 'Poiret One', cursive;
-    font-weight: 800;
-    color: black;
-    letter-spacing: 0.9px;
-}
-
-.reseñas__comentario4 p {
-    font-size: 1.1em;
-    line-height: 30px;
-    padding: 50px 20px 20px 20px;
-    text-align: justify;
-    font-family: 'Poiret One', cursive;
-    font-weight: 800;
-    color: black;
-    letter-spacing: 0.9px;
-}
-
-.reseñas__comentario1 .reseñas__autor {
-    font-size: 20px;
-    color: rgb(148, 148, 148);
-    text-align: center;
+.accordion-header {
     font-family: 'Pacifico', cursive;
 }
 
-.reseñas__comentario2 .reseñas__autor {
-    font-size: 20px;
-    color: rgb(148, 148, 148);
-    text-align: center;
+.accordion-button {
+    font-size: 1.2rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: rgb(138, 200, 241);
+    box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-body {
+    font-family: 'Poiret One', cursive;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 20px;
+    line-height: 30px;
+}
+
+.reseñas__texto {
+    text-align: justify;
+}
+
+.reseñas__autor {
     font-family: 'Pacifico', cursive;
-}
-
-.reseñas__comentario3 .reseñas__autor {
     font-size: 20px;
-    color: rgb(148, 148, 148);
-    text-align: center;
-    font-family: 'Pacifico', cursive;
+    color: rgb(75, 74, 74);
+    font-weight: 500;
+    text-align: right;
+    display: block;
 }
 
-.reseñas__comentario4 .reseñas__autor {
-    font-size: 20px;
-    color: rgb(148, 148, 148);
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-}
-
-.reseñas__comentario1 .reseñas__comillas {
-    font-size: 70px;
-    font-family: 'BIZ UDPGothic', sans-serif;
-    color: #f0fd3b;
-    text-shadow: #383838 1px 2px 1px;
-    position: absolute;
-    top: -15px;
-    left: 30px;
-    background-color: white;
-}
-
-.reseñas__comentario1 .reseñas__comillas1 {
-    font-size: 70px;
-    font-family: 'BIZ UDPGothic', sans-serif;
-    color: #f0fd3b;
-    text-shadow: #383838 1px 2px 1px;
-    position: absolute;
-    bottom: -55px;
-    left: 1245px;
-    background-color: white;
-}
-
-.reseñas__comentario2 .reseñas__comillas {
-    font-size: 70px;
-    font-family: 'BIZ UDPGothic', sans-serif;
-    color: #f0fd3b;
-    text-shadow: #383838 1px 2px 1px;
-    position: absolute;
-    top: -15px;
-    left: 30px;
-    background-color: white;
-}
-
-.reseñas__comentario2 .reseñas__comillas1 {
-    font-size: 70px;
-    font-family: 'BIZ UDPGothic', sans-serif;
-    color: #f0fd3b;
-    text-shadow: #383838 1px 2px 1px;
-    position: absolute;
-    bottom: -55px;
-    left: 1245px;
-    background-color: white;
-}
-
-.reseñas__comentario3 .reseñas__comillas {
-    font-size: 70px;
-    font-family: 'BIZ UDPGothic', sans-serif;
-    color: #f0fd3b;
-    text-shadow: #383838 1px 2px 1px;
-    position: absolute;
-    top: -15px;
-    left: 30px;
-    background-color: white;
-}
-
-.reseñas__comentario3 .reseñas__comillas1 {
-    font-size: 70px;
-    font-family: 'BIZ UDPGothic', sans-serif;
-    color: #f0fd3b;
-    text-shadow: #383838 1px 2px 1px;
-    position: absolute;
-    bottom: -55px;
-    left: 1245px;
-    background-color: white;
-}
-
-.reseñas__comentario4 .reseñas__comillas {
-    font-size: 70px;
-    font-family: 'BIZ UDPGothic', sans-serif;
-    color: #f0fd3b;
-    text-shadow: #383838 1px 2px 1px;
-    position: absolute;
-    top: -15px;
-    left: 30px;
-    background-color: white;
-}
-
-.reseñas__comentario4 .reseñas__comillas1 {
-    font-size: 70px;
-    font-family: 'BIZ UDPGothic', sans-serif;
-    color: #f0fd3b;
-    text-shadow: #383838 1px 2px 1px;
-    position: absolute;
-    bottom: -55px;
-    left: 1245px;
-    background-color: white;
-}
 
 /* ------------------------------------------- CONTÁCTAME ------------------------------------------- */
 
@@ -1325,6 +1187,7 @@ li {
     font-family: 'Pacifico', cursive;
     font-size: 50px;
     text-shadow: 4px 4px rgb(33, 243, 250);
+    font-weight: 800;
 }
 
 .contacto__linea {
@@ -1534,16 +1397,17 @@ textarea {
     font-weight: 900;
 }
 
-.formulario__enviar input {
+.formulario__enviar .btn3 {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 162, 255);
     width: 500px;
     padding: 20px;
-    margin: 10px;
+    margin: 5px;
     border: none;
     font-family: 'Poiret One', cursive;
     font-weight: 1000;
     letter-spacing: 3px;
+    cursor: pointer;
 }
 
 .formulario__item input:hover,
@@ -1551,7 +1415,7 @@ textarea:hover {
     background-color: #ddfcff;
 }
 
-.formulario__enviar input:active {
+.formulario__enviar .btn3:active {
     background-color: #fd3efd;
 }
 
@@ -1673,6 +1537,7 @@ textarea:hover {
         line-height: 140%;
         overflow: none;
         margin-right: 0px;
+        margin-bottom: 0;
     }
 
     .sobreMi__foto {
@@ -1776,6 +1641,11 @@ textarea:hover {
         padding-bottom: 100px;
     }
 
+    .miArte__texto {
+        font-size: 22px;
+        letter-spacing: .9px;
+    }
+
     .col-6 {
         width: 80%;
     }
@@ -1873,13 +1743,20 @@ textarea:hover {
     .prefre__frontal--pregunta {
         text-align: center;
         padding: 10px;
-        font-size: .9em;
     }
 
     .prefre__reverso--respuesta {
         text-align: center;
         padding: 10px;
         padding-top: 15px;
+    }
+
+    .prefre__pregunta {
+        font-size: 1.5em;
+        font-weight: 800;
+    }
+    
+    .prefre__respuesta {
         font-size: .9em;
     }
 
@@ -1895,61 +1772,17 @@ textarea:hover {
         margin-top: -25px;
     }
 
-    .reseñas__grid {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 26% 20% 25% 25%;
-        grid-template-areas: 
-        "p1"
-        "p2"
-        "p3"
-        "p4";
-        justify-content: center;
-        row-gap: 10px;
-        width: 100%;
-        background-color: #ffffff;
+    .col-8 {
+        width: auto;
+        margin: 0 50px
     }
 
-    .reseñas__comentario1 .reseñas__comillas {
-        font-size: 60px;
-        top: -13px;
-        left: 15px;
+    .accordion-body {
+    font-size: 1.1rem;
+    line-height: 25px;
     }
 
-    .reseñas__comentario1 .reseñas__comillas1 {
-        display: none;
-    } 
-
-    .reseñas__comentario2 .reseñas__comillas {
-        font-size: 60px;
-        top: -13px;
-        left: 15px;
-    }
-
-    .reseñas__comentario2 .reseñas__comillas1 {
-        display: none;
-    } 
-
-    .reseñas__comentario3 .reseñas__comillas {
-        font-size: 60px;
-        top: -13px;
-        left: 15px;
-    }
-
-    .reseñas__comentario3 .reseñas__comillas1 {
-        display: none;
-    } 
-
-    .reseñas__comentario4 .reseñas__comillas {
-        font-size: 60px;
-        top: -13px;
-        left: 15px;
-    }
-
-    .reseñas__comentario4 .reseñas__comillas1 {
-        display: none;
-    } 
-
+    
     /* CONTACTO */
 
     .contacto__titulo {
@@ -2026,7 +1859,7 @@ textarea:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 90%;
+        width: 70%;
     }
 
     .formulario__item input,
@@ -2040,10 +1873,10 @@ textarea:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 90%;
+        width: 70%;
     }
 
-    .formulario__enviar input {
+    .formulario__enviar .btn3 {
         width: auto;
         padding: 15px;
         margin: 5px;
@@ -2189,6 +2022,7 @@ textarea:hover {
         line-height: 140%;
         overflow: none;
         margin-right: 0px;
+        margin-bottom: 0;
     }
 
     .sobreMi__foto {
@@ -2297,6 +2131,11 @@ textarea:hover {
         padding-bottom: 100px;
     }
 
+    .miArte__texto {
+        font-size: 23px;
+        letter-spacing: .9px;
+    }
+
     .d-flex {
         flex-direction: column;
     }
@@ -2394,14 +2233,24 @@ textarea:hover {
     .prefre__frontal--pregunta {
         text-align: center;
         padding: 10px;
-        font-size: .9em;
     }
 
     .prefre__reverso--respuesta {
         text-align: center;
         padding: 10px;
         padding-top: 15px;
+    }
+
+    .prefre__pregunta {
+        font-size: 1.5em;
+        font-weight: 800;
+        text-align: center;
+    }
+    
+    .prefre__respuesta {
         font-size: .9em;
+        text-align: center;
+        
     }
 
     /* RESEÑAS */
@@ -2416,63 +2265,15 @@ textarea:hover {
         margin-top: -25px;
     }
 
-    .reseñas__grid {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 26% 20% 25% 25%;
-        grid-template-areas: 
-        "p1"
-        "p2"
-        "p3"
-        "p4";
-        justify-content: center;
-        row-gap: 10px;
-        width: 100%;
-        background-color: #ffffff;
+    .col-8 {
+        width: auto;
+        margin: 0 80px
     }
 
-    .reseñas__comentario1 .reseñas__comillas1 {
-        display: none;
-    } 
-
-    .reseñas__comentario2 .reseñas__comillas1 {
-        display: none;
-    } 
-
-    .reseñas__comentario3 .reseñas__comillas1 {
-        display: none;
-    } 
-
-    .reseñas__comentario4 .reseñas__comillas1 {
-        display: none;
-    } 
-
-    /* .reseñas__comentario {
-        border-radius: 5px;
-        border: 1px solid rgb(148, 148, 148);
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 40px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .accordion-body {
+    font-size: 1.1rem;
+    line-height: 30px;
     }
-
-    .reseñas__comentario p {
-        font-size: 1em;
-        line-height: 25px;
-        margin: 50px 20px 20px 20px;
-        text-align: justify;
-        font-family: 'Poiret One', cursive;
-        font-weight: 800;
-        color: black;
-        letter-spacing: 0.7px;
-    }
-
-    .reseñas__comillas1 {
-        display: none;
-    } */
 
     /* CONTACTO */
 
@@ -2550,7 +2351,7 @@ textarea:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 90%;
+        width: 70%;
     }
 
     .formulario__item input,
@@ -2564,10 +2365,10 @@ textarea:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 90%;
+        width: 70%;
     }
 
-    .formulario__enviar input {
+    .formulario__enviar .btn3 {
         width: auto;
         padding: 15px;
         margin: 5px;
@@ -2770,6 +2571,7 @@ textarea:hover {
         line-height: 140%;
         margin-right: 0px;
         padding: 20px 20px;
+        margin-bottom: 0;
     }
 
     .sobreMi__foto {
@@ -2918,6 +2720,11 @@ textarea:hover {
         padding-bottom: 100px;
     }
 
+    .miArte__texto {
+        font-size: 20px;
+        letter-spacing: .8px;
+    }
+
     .col-6 {
         width: 90%;
     }
@@ -3010,13 +2817,20 @@ textarea:hover {
         height: 350px;
     }
 
-    .prefre__frontal--pregunta {
-        font-size: .9em;
+    .prefre__frontal--respuesta {
+        padding: 0;
     }
 
-    .prefre__reverso--respuesta {
+    .prefre__pregunta {
+        font-size: 1.3em;
+        font-weight: 800;
+        text-align: center;
+    }
+    
+    .prefre__respuesta {
         font-size: .9em;
-        padding-bottom: 10px;
+        text-align: center;
+        
     }
 
     /* RESEÑAS */
@@ -3031,104 +2845,15 @@ textarea:hover {
         margin-top: -25px;
     }
 
-    .reseñas__comentario1 p {
-        font-size: .8em;
-        line-height: 20px;
-        letter-spacing: 0.7px;
-        padding-top: auto;
+    .col-8 {
+        width: auto;
+        margin: 0 10px
     }
 
-    .reseñas__comentario1 .reseñas__autor {
-        font-size: 1em;
+    .accordion-body {
+    font-size: 1rem;
+    line-height: 20px;
     }
-
-    .reseñas__comentario2 p {
-        font-size: .8em;
-        line-height: 20px;
-        letter-spacing: 0.7px;
-        padding-top: auto;
-    }
-
-    .reseñas__comentario2 .reseñas__autor {
-        font-size: 1em;
-    }
-
-    .reseñas__comentario3 p {
-        font-size: .8em;
-        line-height: 20px;
-        letter-spacing: 0.7px;
-        padding-top: auto;
-    }
-
-    .reseñas__comentario3 .reseñas__autor {
-        font-size: 1em;
-    }
-
-    .reseñas__comentario4 p {
-        font-size: .8em;
-        line-height: 20px;
-        letter-spacing: 0.7px;
-        padding-top: auto;
-    }
-
-    .reseñas__comentario4 .reseñas__autor {
-        font-size: 1em;
-    }
-
-    .reseñas__grid {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 28% 20% 25% 25%;
-        grid-template-areas: 
-        "p1"
-        "p2"
-        "p3"
-        "p4";
-        justify-content: center;
-        row-gap: 10px;
-        width: 100%;
-        background-color: #ffffff;
-    }
-
-    .reseñas__comentario1 .reseñas__comillas {
-        font-size: 60px;
-        top: -13px;
-        left: 15px;
-    }
-
-    .reseñas__comentario1 .reseñas__comillas1 {
-        display: none;
-    } 
-
-    .reseñas__comentario2 .reseñas__comillas {
-        font-size: 60px;
-        top: -13px;
-        left: 15px;
-    }
-
-    .reseñas__comentario2 .reseñas__comillas1 {
-        display: none;
-    } 
-
-    .reseñas__comentario3 .reseñas__comillas {
-        font-size: 60px;
-        top: -13px;
-        left: 15px;
-    }
-
-    .reseñas__comentario3 .reseñas__comillas1 {
-        display: none;
-    } 
-
-    .reseñas__comentario4 .reseñas__comillas {
-        font-size: 60px;
-        top: -13px;
-        left: 15px;
-    }
-
-    .reseñas__comentario4 .reseñas__comillas1 {
-        display: none;
-    } 
 
     /* CONTACTO */
 
@@ -3230,7 +2955,7 @@ textarea:hover {
         width: 90%;
     }
 
-    .formulario__enviar input {
+    .formulario__enviar .btn3 {
         width: auto;
         padding: 15px;
         margin: 5px;
