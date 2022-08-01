@@ -1,0 +1,127 @@
+/* ------------------------------------------- PREGUNTAS FRECUENTES ------------------------------------------- */
+
+.prefre__titulo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-shadow: 4px 4px rgb(33, 243, 250);
+    font-weight: 800;
+}
+
+.prefre__linea {
+    border-top: 3px solid rgb(255, 162, 255);
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 60px;
+    margin: 0 300px 0 300px;
+}
+
+.prefre__contenedor {
+    max-width: 1400px;
+    margin: auto;
+    background-color: #EFF3F5;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.prefre__padre {
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.prefre {
+    width: 350px;
+    height: 400px;
+    background-color: #a6cada;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+    border-radius: 10px;
+}
+
+.prefre__frontal--pregunta,
+.prefre__reverso--respuesta {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    font-family: 'Poiret One', cursive;
+    font-weight: 800;
+    letter-spacing: 0; /* 0.9 antes de Bootstrap */
+}
+
+.prefre__frontal--pregunta {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 2px 1px rgb(89, 222, 255);
+}
+
+.prefre__reverso--respuesta {
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.prefre__pregunta {
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+.prefre__respuesta {
+    font-size: 1.1em;
+}
+
+.prefre__respuesta,
+ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.prefre__respuesta ul,
+li {
+    /* line-height: 1.4em; */
+    padding-bottom: 3px;
+}
+
+.prefre__reverso--respuesta {
+    transform: rotateY(180deg);
+    background: white;
+}
+
+.prefre__respuesta li:hover {
+    background: none;
+}
+
+.prefre__padre:hover .prefre {
+    transform: rotateY(180deg)
+}
+
+.btn2 {
+    border: none;
+    background-color: transparent;
+}
+
+.btn2:hover {
+    padding-left: 10px;  
+}

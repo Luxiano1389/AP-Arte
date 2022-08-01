@@ -1,0 +1,51 @@
+.boton__contenedor {
+    position: fixed;
+    z-index: 999;
+    transition: ease 0.3s;
+    bottom: 5px;
+    right: 5px;
+    /* animation: efecto 1.5s infinite; */
+    border-radius: 100%;
+    /* background-color: rgb(252, 199, 247); */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.boton__contenedor:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton__contenedor .boton--whatsapp {
+    width: 55px;
+    transition: ease 1s;
+}
+
+.boton--whatsapp:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.btn {
+    grid-area: a;
+    text-align: center;
+    border: none;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    background-color: #a6cada;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-top: 500px;
+    padding: 30px 0 30px 0;
+    align-self: center;
+    box-shadow: 0 -6px 0 rgb(252, 199, 247);
+}
+
+.btn:hover {
+    background-color: #a6cada;
+    transition: all 500ms;
+    color: black;
+    text-shadow: #fffefd 3px 3px;
+}

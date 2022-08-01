@@ -1,0 +1,66 @@
+/* Sección Rincón */
+
+.miRinconcito__contenedor {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 600px;
+    grid-template-areas:
+        "img1 h1"
+        "a img2";
+    gap: 15px 10px;
+    justify-content: center;
+    font-family: 'Poiret One', cursive;
+    font-weight: 500;
+    margin: 50px auto;
+}
+
+.miRinconcito__imagen {
+    width: 600px;
+    grid-area: img1;
+}
+
+.miRinconcito__titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    background-color: rgb(252, 199, 247);
+    box-shadow: 0 6px #a6cada;
+    border-radius: 10px;
+    text-align: center;
+    grid-area: h1;
+    height: 100%;
+    line-height: 40px;
+    padding-top: 10px;
+}
+
+.miRinconcito__titulo--font {
+    font-family: 'Poiret One', cursive;
+}
+
+.miRinconcito__imagen1 {
+    width: 600px;
+    height: 100%;
+    grid-area: img2;
+}
+
+/* .miRinconcito__enlace {
+    grid-area: a;
+    text-align: center;
+    border: none;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    background-color: #a6cada;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-top: 500px;
+    padding: 30px 0px 30px 0px;
+    align-self: center;
+    box-shadow: 0px -6px 0px rgb(252, 199, 247);
+} */
+
+/* .miRinconcito__enlace:hover {
+    text-shadow: #fffefd 3px 3px;
+    transition: all 500ms;
+} */

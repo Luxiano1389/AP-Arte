@@ -1,0 +1,2761 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------- INICIO ------------------------------------------- */
+/*Menú*/
+.header {
+  z-index: 700;
+  box-shadow: 1px 1px 1px #ffa2ff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-right: 10px;
+}
+
+.slide-in-top {
+  animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logo img {
+  width: 130px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.menu .menu__enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-items: flex-end;
+  margin-bottom: 0;
+}
+
+.menu .menu__enlaces li {
+  list-style: none;
+  padding: 15px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.1em;
+}
+
+.menu .menu__enlaces a {
+  text-decoration: none;
+  color: black;
+}
+
+.hvr-bounce-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.hvr-bounce-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fcc7f7;
+  border-radius: 10px;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+  color: white;
+}
+
+.hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.menu__enlaces--cerrado {
+  display: none;
+}
+
+.menu__lineas {
+  display: none;
+  color: white;
+}
+
+/*Banner*/
+.banner {
+  width: 100%;
+  max-height: 1200px;
+  background-image: url(../imágenes/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Sección Sobre Mí */
+.sobreMi {
+  width: 100%;
+}
+
+.sobreMi__contenedor {
+  /* Contenedor */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.sobreMi__titulo {
+  /* Hola, */
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 45px;
+  padding-top: 40px;
+  font-weight: 900;
+  color: #f5b25b;
+  text-shadow: 4px 4px black;
+}
+
+.sobreMi__titulo1 {
+  /* soy Anto */
+  font-family: 'Pacifico', cursive;
+  font-size: 100px;
+  text-align: center;
+  padding-bottom: 40px;
+  color: black;
+  text-shadow: 4px 4px #5cc2f1;
+  font-weight: 900;
+}
+
+.tracking-in-contract-bck {
+  animation: tracking-in-contract-bck 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.bounce-in-top {
+  animation: bounce-in-top 1.1s both;
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+.sobreMi__punto {
+  color: #ffa2ff;
+  padding: 5px;
+  text-shadow: 4px 4px black;
+}
+
+.sobreMi__linea {
+  border-top: 3px solid #ffa2ff;
+  height: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 0 300px 0 300px;
+}
+
+.sobreMi__texto {
+  /* Texto */
+  text-align: justify;
+  font-family: 'Poiret One', cursive;
+  font-weight: 600;
+  font-size: 20px;
+  width: 45%;
+  padding: 50px 20px;
+  height: 400px;
+  color: black;
+  line-height: 40px;
+  background-color: #a6cada;
+  border-radius: 10px;
+  margin-right: 5px;
+  overflow: auto;
+}
+
+span {
+  font-family: 'Pacifico', cursive;
+  font-weight: 100;
+}
+
+.sobreMi__foto {
+  /* Imagen */
+  width: 45%;
+  max-width: 1200px;
+  height: 400px;
+  margin-left: 5px;
+  object-fit: cover;
+}
+
+/* Sección Rincón */
+.miRinconcito__contenedor {
+  display: grid;
+  width: 70%;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100px 600px;
+  grid-template-areas: "img1 h1" "a img2";
+  gap: 15px 10px;
+  justify-content: center;
+  font-family: 'Poiret One', cursive;
+  font-weight: 500;
+  margin: 50px auto;
+}
+
+.miRinconcito__imagen {
+  width: 600px;
+  grid-area: img1;
+}
+
+.miRinconcito__titulo {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  background-color: #fcc7f7;
+  box-shadow: 0 6px #a6cada;
+  border-radius: 10px;
+  text-align: center;
+  grid-area: h1;
+  height: 100%;
+  line-height: 40px;
+  padding-top: 10px;
+}
+
+.miRinconcito__titulo--font {
+  font-family: 'Poiret One', cursive;
+}
+
+.miRinconcito__imagen1 {
+  width: 600px;
+  height: 100%;
+  grid-area: img2;
+}
+
+/* .miRinconcito__enlace {
+    grid-area: a;
+    text-align: center;
+    border: none;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    background-color: #a6cada;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-top: 500px;
+    padding: 30px 0px 30px 0px;
+    align-self: center;
+    box-shadow: 0px -6px 0px rgb(252, 199, 247);
+} */
+/* .miRinconcito__enlace:hover {
+    text-shadow: #fffefd 3px 3px;
+    transition: all 500ms;
+} */
+.boton__contenedor {
+  position: fixed;
+  z-index: 999;
+  transition: ease 0.3s;
+  bottom: 5px;
+  right: 5px;
+  /* animation: efecto 1.5s infinite; */
+  border-radius: 100%;
+  /* background-color: rgb(252, 199, 247); */
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.boton__contenedor:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.boton__contenedor .boton--whatsapp {
+  width: 55px;
+  transition: ease 1s;
+}
+
+.boton--whatsapp:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.btn {
+  grid-area: a;
+  text-align: center;
+  border: none;
+  font-family: 'Poiret One', cursive;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  background-color: #a6cada;
+  font-weight: 900;
+  border-radius: 10px;
+  margin-top: 500px;
+  padding: 30px 0 30px 0;
+  align-self: center;
+  box-shadow: 0 -6px 0 #fcc7f7;
+}
+
+.btn:hover {
+  background-color: #a6cada;
+  transition: all 500ms;
+  color: black;
+  text-shadow: #fffefd 3px 3px;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+}
+
+.footer__contenedor {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.footer__box {
+  font-family: 'Poiret One', cursive;
+  font-weight: 900;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer__contenido {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer__contenido1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.footer__logo img {
+  /* Logo AP */
+  width: 150px;
+}
+
+.footer__texto {
+  /* Emprendimiento personal */
+  font-family: 'Poiret One', cursive;
+  font-weight: 900;
+  font-size: 18px;
+  color: dimgray;
+  text-align: justify;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.footer__contenido1 h2 {
+  /* Conectá Conmigo */
+  font-weight: 700;
+  font-family: 'Poiret One', cursive;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.footer__box .fa-brands {
+  /* Iconos Redes Sociales */
+  margin-right: 10px;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+.footer__box .fa-envelope {
+  /* Icono Email */
+  margin-right: 10px;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+.footer__box a:hover {
+  opacity: 0.8;
+}
+
+.footer__box a {
+  text-decoration: none;
+  color: dimgray;
+  font-size: 17px;
+  max-width: 300px;
+}
+
+.footer__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+}
+
+.footer__copyright p {
+  /* Antonela Poveda Arte - Argentina - © 2022 */
+  font-family: 'Poiret One', cursive;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  font-weight: 800;
+}
+
+.footer__copyright hr {
+  /* Línea divisoria */
+  border: none;
+  height: 3px;
+  background-color: #ffa2ff;
+  opacity: 1;
+}
+
+/* ------------------------------------------- MI ARTE ------------------------------------------- */
+/* Menú */
+.miArte__titulo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  text-shadow: 4px 4px #21f3fa;
+  font-weight: 800;
+}
+
+.miArte__linea {
+  border-top: 3px solid #ffa2ff;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 60px;
+  margin: 0 300px 0 300px;
+}
+
+.miArte__contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 5px;
+  background-color: #EFF3F5;
+}
+
+.miArte__imagenes img {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 0 1px silver;
+  display: block;
+  height: 100%;
+}
+
+.miArte__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fcc7f7;
+  overflow: auto;
+}
+
+.miArte__imagenes {
+  flex: 25%;
+  padding: 5px;
+}
+
+.miArte__imagen1 {
+  position: relative;
+}
+
+.miArte__imagen2 {
+  position: relative;
+}
+
+.miArte__imagen6 {
+  position: relative;
+}
+
+.miArte__imagen7 {
+  position: relative;
+}
+
+.miArte__imagen9 {
+  position: relative;
+}
+
+.miArte__imagen10 {
+  position: relative;
+}
+
+.miArte__imagen11 {
+  position: relative;
+}
+
+.miArte__imagen3 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.miArte__imagen4 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.miArte__imagen5 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.miArte__imagen8 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.miArte__imagen12 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.miArte__imagen13 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.miArte__imagen14 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.miArte__imagen15 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.miArte__imagen16 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.miArte__imagen17 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.miArte__imagen1:hover .miArte__overlay {
+  opacity: .9;
+}
+
+.miArte__imagen5:hover .miArte__overlay {
+  opacity: 0.9;
+}
+
+.miArte__imagen6:hover .miArte__overlay {
+  opacity: 0.9;
+}
+
+.miArte__imagen7:hover .miArte__overlay {
+  opacity: .9;
+}
+
+.miArte__imagen9:hover .miArte__overlay {
+  opacity: .9;
+}
+
+.miArte__imagen10:hover .miArte__overlay {
+  opacity: .9;
+}
+
+.miArte__imagen11:hover .miArte__overlay {
+  opacity: .9;
+}
+
+.miArte__imagen16:hover .miArte__overlay {
+  opacity: .9;
+}
+
+.miArte__imagen2:hover .miArte__imagen--mate1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.miArte__imagen3:hover .miArte__imagen--gaucho {
+  opacity: 1;
+  visibility: visible;
+  object-fit: cover;
+}
+
+.miArte__imagen4:hover .miArte__imagen--cuenco {
+  opacity: 1;
+  visibility: visible;
+  object-fit: cover;
+}
+
+.miArte__imagen8:hover .miArte__imagen--abstracto {
+  opacity: 1;
+  visibility: visible;
+  object-fit: cover;
+}
+
+.miArte__imagen12:hover .miArte__imagen--mate {
+  opacity: 1;
+  visibility: visible;
+}
+
+.miArte__imagen13:hover .miArte__imagen--perro4 {
+  opacity: 1;
+  visibility: visible;
+  object-fit: cover;
+}
+
+.miArte__imagen14:hover .miArte__imagen--perro3 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.miArte__imagen15:hover .miArte__imagen--mate2 {
+  opacity: 1;
+  visibility: visible;
+  object-fit: cover;
+}
+
+.miArte__imagen17:hover .miArte__imagen--perro2 {
+  opacity: 1;
+  visibility: visible;
+  object-fit: cover;
+}
+
+.miArte__imagen--mate {
+  visibility: hidden;
+  position: absolute;
+  top: -5px;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.miArte__imagen--mate1 {
+  visibility: hidden;
+  position: absolute;
+  top: -5px;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.miArte__imagen--mate2 {
+  visibility: hidden;
+  position: absolute;
+  top: -5px;
+  transition: 1s ease;
+  opacity: 0;
+  object-fit: cover;
+}
+
+.miArte__imagen--perro2 {
+  visibility: hidden;
+  position: absolute;
+  top: -6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 1s ease;
+  opacity: 0;
+  object-fit: cover;
+}
+
+.miArte__imagen--perro3 {
+  visibility: hidden;
+  position: absolute;
+  top: -6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.miArte__imagen--perro4 {
+  visibility: hidden;
+  position: absolute;
+  top: -6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 1s ease;
+  opacity: 0;
+  object-fit: cover;
+}
+
+.miArte__imagen--abstracto {
+  visibility: hidden;
+  position: absolute;
+  top: -6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 1s ease;
+  opacity: 0;
+  object-fit: cover;
+}
+
+.miArte__imagen--gaucho {
+  visibility: hidden;
+  position: absolute;
+  top: -6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 1s ease;
+  opacity: 0;
+  object-fit: cover;
+}
+
+.miArte__imagen--cuenco {
+  visibility: hidden;
+  position: absolute;
+  top: -6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 1s ease;
+  opacity: 0;
+  object-fit: cover;
+}
+
+.miArte__texto {
+  color: black;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-weight: 900;
+  letter-spacing: 0px;
+  /* 0.9 antes de bootstrap */
+}
+
+.miArte__comentarios {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #e1e8eb;
+}
+
+.miArte__subtitulo {
+  font-family: 'Poiret One', cursive;
+  padding-top: 10px;
+}
+
+.form-floating {
+  font-family: 'Poiret One', cursive;
+  font-weight: 900;
+  font-size: 15px;
+  height: 100%;
+}
+
+.form-floating > label {
+  left: 5px;
+  letter-spacing: 2px;
+}
+
+#floatingTextarea2 {
+  margin-left: 10px;
+  font-weight: 800;
+  border-radius: 0;
+  border: #a6d0e4 solid 2px;
+  background-color: #fefffd;
+}
+
+.btn1 {
+  color: black;
+  background-color: #ffa2ff;
+  width: 200px;
+  border: none;
+  font-family: 'Poiret One', cursive;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+.btn1:active {
+  background-color: #fd3efd;
+}
+
+/* ------------------------------------------- PEDIDOS ------------------------------------------- */
+.pedidos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #EFF3F5;
+  font-weight: 800;
+}
+
+.pedidos__contenedor {
+  font-family: 'Poiret One', cursive;
+  padding-bottom: 40px;
+  background-color: #EFF3F5;
+  padding-top: 60px;
+}
+
+.pedidos__pregunta {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #a6cada;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  width: 700px;
+  letter-spacing: 10px;
+  color: #4b4a4a;
+  margin-bottom: 20px;
+}
+
+.pedidos__respuesta {
+  margin-bottom: 50px;
+  list-style: none;
+  font-size: 1.1em;
+  font-weight: 800;
+  letter-spacing: 0.9px;
+  text-align: justify;
+}
+
+.pedidos__titulo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  text-shadow: 4px 4px #21f3fa;
+}
+
+.pedidos__linea {
+  border-top: 3px solid #ffa2ff;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 60px;
+  margin: 0 300px 0 300px;
+}
+
+.pedidos__respuesta li:hover {
+  background: none;
+}
+
+.pedidos__video {
+  background-color: #a6cada;
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 25px;
+  animation: efecto 1.5s infinite;
+}
+
+.pedidos__video video {
+  height: 550px;
+}
+
+.pedidos__video video {
+  transition: ease 1s;
+}
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 #a6cada;
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
+
+/* ------------------------------------------- PREGUNTAS FRECUENTES ------------------------------------------- */
+.prefre__titulo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  text-shadow: 4px 4px #21f3fa;
+  font-weight: 800;
+}
+
+.prefre__linea {
+  border-top: 3px solid #ffa2ff;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 60px;
+  margin: 0 300px 0 300px;
+}
+
+.prefre__contenedor {
+  max-width: 1400px;
+  margin: auto;
+  background-color: #EFF3F5;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.prefre__padre {
+  margin: 20px;
+  perspective: 1000px;
+}
+
+.prefre {
+  width: 350px;
+  height: 400px;
+  background-color: #a6cada;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 600ms;
+  border-radius: 10px;
+}
+
+.prefre__frontal--pregunta,
+.prefre__reverso--respuesta {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  font-family: 'Poiret One', cursive;
+  font-weight: 800;
+  letter-spacing: 0;
+  /* 0.9 antes de Bootstrap */
+}
+
+.prefre__frontal--pregunta {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: black;
+  text-shadow: 4px 2px 1px #59deff;
+}
+
+.prefre__reverso--respuesta {
+  text-align: justify;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.prefre__pregunta {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+.prefre__respuesta {
+  font-size: 1.1em;
+}
+
+.prefre__respuesta,
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.prefre__respuesta ul,
+li {
+  /* line-height: 1.4em; */
+  padding-bottom: 3px;
+}
+
+.prefre__reverso--respuesta {
+  transform: rotateY(180deg);
+  background: white;
+}
+
+.prefre__respuesta li:hover {
+  background: none;
+}
+
+.prefre__padre:hover .prefre {
+  transform: rotateY(180deg);
+}
+
+.btn2 {
+  border: none;
+  background-color: transparent;
+}
+
+.btn2:hover {
+  padding-left: 10px;
+}
+
+/* ------------------------------------------- RESEÑAS ------------------------------------------- */
+.reseñas {
+  background-color: #EFF3F5;
+}
+
+.reseñas__titulo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  text-shadow: 4px 4px #21f3fa;
+  font-weight: 800;
+}
+
+.reseñas__linea {
+  border-top: 3px solid #ffa2ff;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 60px;
+  margin: 0 300px 0 300px;
+}
+
+.accordion {
+  background-color: #EFF3F5;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+.accordion-header {
+  font-family: 'Pacifico', cursive;
+}
+
+.accordion-button {
+  font-size: 1.2rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #8ac8f1;
+  box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-body {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 20px;
+  line-height: 30px;
+}
+
+.reseñas__texto {
+  text-align: justify;
+}
+
+.reseñas__autor {
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  color: #4b4a4a;
+  font-weight: 500;
+  text-align: right;
+  display: block;
+}
+
+/* ------------------------------------------- CONTÁCTAME ------------------------------------------- */
+.contacto__titulo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  text-shadow: 4px 4px #21f3fa;
+  font-weight: 800;
+}
+
+.contacto__linea {
+  border-top: 3px solid #ffa2ff;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 60px;
+  margin: 0 300px 0 300px;
+}
+
+.contacto__redes {
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto__email,
+.contacto__instagram,
+.contacto__whatsapp {
+  width: 300px;
+  position: relative;
+  margin: 20px;
+  font-family: 'Poiret One', cursive;
+  border-radius: 10px;
+}
+
+.contacto__redes:hover {
+  box-shadow: 1px 1px 1px -10px black;
+}
+
+.contacto__email:hover .contacto__icon {
+  background-color: #DD4825;
+}
+
+.contacto__email .contacto__icon i {
+  color: #DD4825;
+}
+
+.contacto__email:hover .contacto__icon i {
+  color: white;
+}
+
+.contacto__instagram:hover .contacto__icon {
+  background-color: #a752f7;
+}
+
+.contacto__instagram .contacto__icon i {
+  color: #a752f7;
+}
+
+.contacto__instagram:hover .contacto__icon i {
+  color: white;
+}
+
+.contacto__whatsapp:hover .contacto__icon {
+  background-color: #5ef8a3;
+}
+
+.contacto__whatsapp .contacto__icon i {
+  color: #5ef8a3;
+}
+
+.contacto__whatsapp:hover .contacto__icon i {
+  color: white;
+}
+
+.contacto__icon {
+  width: 100%;
+  height: 220px;
+  background-color: #EFF3F5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+  border-radius: 10px;
+}
+
+.contacto__icon i {
+  font-size: 150px;
+  color: white;
+  transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+}
+
+.contacto__info {
+  width: 100%;
+  height: 220px;
+  color: black;
+  font-weight: 900;
+  background-color: #EFF3F5;
+  padding: 20px;
+  margin-top: -220px;
+  transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacto__email:hover .contacto__info {
+  margin-top: 0;
+  transition: all 300ms;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.contacto__instagram:hover .contacto__info {
+  margin-top: 0;
+  transition: all 300ms;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.contacto__whatsapp:hover .contacto__info {
+  margin-top: 0;
+  transition: all 300ms;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.contacto__email:hover .contacto__icon {
+  margin-top: -110px;
+  border-radius: 10px 10px 0 0px;
+}
+
+.contacto__instagram:hover .contacto__icon {
+  margin-top: -110px;
+  border-radius: 10px 10px 0 0px;
+}
+
+.contacto__whatsapp:hover .contacto__icon {
+  margin-top: -110px;
+  border-radius: 10px 10px 0 0px;
+}
+
+.contacto__info p {
+  font-size: 1.1em;
+  text-align: center;
+  letter-spacing: 0.9px;
+}
+
+.contacto__info input {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fcc7f7;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 800;
+  font-family: 'Poiret One', cursive;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 60px;
+  padding-bottom: 50px;
+}
+
+.color-change-3x {
+  animation: color-change-3x 10s linear infinite alternate both;
+}
+
+@keyframes color-change-3x {
+  0% {
+    background: #b0f6f2;
+  }
+  50% {
+    background: #e6d8fa;
+  }
+  100% {
+    background: #c7f6d4;
+  }
+}
+
+.formulario__subtitulo {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 35px;
+  padding: 30px 0;
+  text-shadow: 4px 4px white;
+}
+
+.formulario__item {
+  font-size: 30px;
+  font-family: 'Poiret One', cursive;
+}
+
+.formulario__item input,
+textarea {
+  color: black;
+  /* background-color: #fdc8ff; */
+  width: 500px;
+  padding: 20px;
+  margin: 10px;
+  border: none;
+  font-family: 'Poiret One', cursive;
+  font-weight: 900;
+}
+
+.formulario__enviar .btn3 {
+  color: black;
+  background-color: #ffa2ff;
+  width: 500px;
+  padding: 20px;
+  margin: 5px;
+  border: none;
+  font-family: 'Poiret One', cursive;
+  font-weight: 1000;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.formulario__item input:hover,
+textarea:hover {
+  background-color: #ddfcff;
+}
+
+.formulario__enviar .btn3:active {
+  background-color: #fd3efd;
+}
+
+/* MEDIA QUERY TABLET */
+@media (min-width: 601px) and (max-width: 767px) {
+  /* MENÚ */
+  .logo img {
+    width: 120px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .menu__lineas {
+    display: block;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .menu__lineas i {
+    color: #ffa2ff;
+  }
+  .menu {
+    display: none;
+  }
+  .menu .menu_enlaces:target {
+    display: block;
+  }
+  .menu:target {
+    display: block;
+  }
+  .menu__enlaces--cerrado {
+    display: block;
+  }
+  .menu {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .menu__enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .menu .menu__enlaces li {
+    font-size: 1.1em;
+    margin: 0 10px;
+    padding-top: 15px;
+  }
+  .menu__cerrar {
+    margin-left: 20%;
+    font-size: 25px;
+    font-family: 'Permanent Marker', cursive;
+    color: #ffa2ff;
+  }
+  .menu__enlaces li:hover {
+    background: none;
+  }
+  .menu__enlaces .menu--activo a {
+    background: none;
+    border-bottom: 1px solid #21f3fa;
+    padding: 0;
+    border-radius: 0;
+  }
+  .boton__contenedor .boton--whatsapp {
+    display: none;
+  }
+  /* INICIO */
+  .sobreMi__titulo {
+    /* Hola, */
+    font-size: 40px;
+  }
+  .sobreMi__titulo1 {
+    /* soy Anto */
+    font-size: 60px;
+  }
+  .sobreMi__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -10px;
+  }
+  .sobreMi__contenedor {
+    /* Contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .sobreMi__texto {
+    /* Texto */
+    font-size: 1.2em;
+    width: 95%;
+    padding: 50px 20px;
+    height: 300px;
+    line-height: 140%;
+    overflow: none;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .sobreMi__foto {
+    /* Imagen */
+    width: 95%;
+    margin-top: 5px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 0;
+  }
+  .miRinconcito__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px auto;
+  }
+  .miRinconcito__imagen {
+    width: 95%;
+    margin-bottom: -10px;
+  }
+  .miRinconcito__imagen1 {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .miRinconcito__titulo {
+    font-size: 25px;
+    height: 100%;
+    width: 95%;
+    line-height: 40px;
+    padding: 10px;
+    margin-bottom: -5px;
+  }
+  .btn {
+    grid-area: a;
+    text-align: center;
+    border: none;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    background-color: #a6cada;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-top: -5px;
+    padding: 30px 0 30px 0;
+    align-self: center;
+    box-shadow: 0 -6px 0 #fcc7f7;
+    width: 95%;
+  }
+  /* MI ARTE */
+  .miArte__titulo {
+    font-size: 35px;
+  }
+  .miArte__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -25px;
+  }
+  .miArte__contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+  }
+  .miArte__imagenes {
+    padding-top: 0;
+    margin-top: 0;
+    height: 100%;
+    width: 80%;
+  }
+  .miArte__imagenes img {
+    margin-top: 6px;
+  }
+  .miArte__overlay {
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+  }
+  .miArte__comentarios {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .miArte__texto {
+    font-size: 22px;
+    letter-spacing: .9px;
+  }
+  .col-6 {
+    width: 80%;
+  }
+  #floatingTextarea2 {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .btn1 {
+    margin-top: 10px;
+    width: 20%;
+  }
+  .miArte__subtitulo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* PEDIDOS */
+  .pedidos__titulo {
+    font-size: 35px;
+  }
+  .pedidos__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -25px;
+  }
+  .pedidos__video video {
+    height: 450px;
+  }
+  .pedidos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .pedidos__contenedor {
+    height: 100%;
+    width: 95%;
+  }
+  .pedidos__pregunta {
+    width: auto;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    text-align: center;
+  }
+  .pedidos__respuesta {
+    margin-bottom: 50px;
+    font-size: 1em;
+    font-weight: 800;
+    line-height: 1.3em;
+    text-align: center;
+  }
+  .pedidos__respuesta li {
+    line-height: 1.3em;
+    width: 90%;
+  }
+  /* PREGUNTAS FRECUENTES */
+  .prefre__titulo {
+    font-size: 35px;
+  }
+  .prefre__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -25px;
+  }
+  .prefre__padre {
+    width: auto;
+  }
+  .prefre {
+    width: 250px;
+    height: 350px;
+    background-color: #a6cada;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+    border-radius: 10px;
+  }
+  .prefre__frontal--pregunta {
+    text-align: center;
+    padding: 10px;
+  }
+  .prefre__reverso--respuesta {
+    text-align: center;
+    padding: 10px;
+    padding-top: 15px;
+  }
+  .prefre__pregunta {
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+  .prefre__respuesta {
+    font-size: .9em;
+  }
+  /* RESEÑAS */
+  .reseñas__titulo {
+    font-size: 35px;
+  }
+  .reseñas__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -25px;
+  }
+  .col-8 {
+    width: auto;
+    margin: 0 50px;
+  }
+  .accordion-body {
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+  /* CONTACTO */
+  .contacto__titulo {
+    font-size: 35px;
+  }
+  .contacto__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -25px;
+  }
+  .contacto__redes {
+    max-width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacto__email {
+    width: 80%;
+    margin: 10px 5px;
+  }
+  .contacto__instagram {
+    width: 80%;
+    margin: 10px 5px;
+  }
+  .contacto__whatsapp {
+    width: 80%;
+    margin: 10px 5px;
+  }
+  .contacto__icon {
+    width: 190px;
+    height: 210px;
+  }
+  .contacto__icon i {
+    font-size: 120px;
+    color: white;
+    transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+  }
+  .contacto__info {
+    width: 190px;
+    height: 210px;
+  }
+  .contacto__info p {
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+  }
+  .contacto__info input {
+    padding: 0px 10px;
+    font-size: .8em;
+  }
+  .formulario {
+    margin-top: 40px;
+  }
+  .formulario__subtitulo {
+    font-size: 30px;
+  }
+  .formulario__item {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+  .formulario__item input,
+  textarea {
+    width: auto;
+    padding: 15px;
+    margin: 5px;
+  }
+  .formulario__enviar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+  }
+  .formulario__enviar .btn3 {
+    width: auto;
+    padding: 15px;
+    margin: 5px;
+  }
+  .footer__box {
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: space-between;
+    /* padding-left: 80px; */
+  }
+  .footer__contenido {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 50px;
+  }
+  .footer__contenido1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .footer__logo img {
+    /* Logo AP */
+    width: 120px;
+  }
+  .footer__contenido .footer__texto {
+    /* Emprendimiento personal */
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    font-size: 15px;
+    color: dimgray;
+    max-width: 90%;
+    margin-top: 10px;
+  }
+  .footer__contenido1 h2 {
+    /* Conectá Conmigo */
+    font-weight: 700;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  .footer__box .fa-brands {
+    /* Iconos Redes Sociales */
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 15px;
+  }
+  .footer__box .fa-envelope {
+    /* Icono Email */
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 15px;
+  }
+  .footer__box a {
+    text-decoration: none;
+    color: dimgray;
+    font-size: 15px;
+  }
+  .footer__copyright p {
+    /* Antonela Poveda Arte - Argentina - © 2022 */
+    font-family: 'Poiret One', cursive;
+    margin-top: 15px;
+    font-weight: 800;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* MENÚ */
+  .logo img {
+    width: 120px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .menu .menu__enlaces li {
+    list-style: none;
+    padding: 10px 5px 10px 10px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 16px;
+  }
+  .boton__contenedor .boton--whatsapp {
+    display: none;
+  }
+  /* INICIO */
+  .sobreMi__titulo {
+    /* Hola, */
+    font-size: 35px;
+  }
+  .sobreMi__titulo1 {
+    /* soy Anto */
+    font-size: 65px;
+  }
+  .sobreMi__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -10px;
+  }
+  .sobreMi__contenedor {
+    /* Contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .sobreMi__texto {
+    /* Texto */
+    font-size: 1.2em;
+    width: 95%;
+    padding: 50px 20px;
+    height: 300px;
+    line-height: 140%;
+    overflow: none;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .sobreMi__foto {
+    /* Imagen */
+    width: 95%;
+    margin-top: 5px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 0;
+  }
+  .miRinconcito__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px auto;
+  }
+  .miRinconcito__imagen {
+    width: 95%;
+    margin-bottom: -10px;
+  }
+  .miRinconcito__imagen1 {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .miRinconcito__titulo {
+    font-size: 25px;
+    height: 100%;
+    width: 95%;
+    line-height: 40px;
+    padding: 10px;
+    margin-bottom: -5px;
+  }
+  .btn {
+    grid-area: a;
+    text-align: center;
+    border: none;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    background-color: #a6cada;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-top: -5px;
+    padding: 30px 0 30px 0;
+    align-self: center;
+    box-shadow: 0 -6px 0 #fcc7f7;
+    width: 95%;
+  }
+  /* MI ARTE */
+  .miArte__titulo {
+    font-size: 35px;
+  }
+  .miArte__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -25px;
+  }
+  .miArte__contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    height: 100%;
+  }
+  .miArte__imagenes {
+    padding-top: 0;
+    margin-top: 0;
+    height: 100%;
+    width: 60%;
+  }
+  .miArte__imagenes img {
+    margin-top: 6px;
+  }
+  .miArte__overlay {
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+  }
+  .miArte__subtitulo h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .miArte__comentarios {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .miArte__texto {
+    font-size: 23px;
+    letter-spacing: .9px;
+  }
+  .d-flex {
+    flex-direction: column;
+  }
+  .col-6 {
+    width: 60%;
+  }
+  #floatingTextarea2 {
+    margin: auto;
+    margin-top: 50px;
+  }
+  .btn1 {
+    margin-top: 10px;
+    width: 20%;
+  }
+  /* PEDIDOS */
+  .pedidos__titulo {
+    font-size: 35px;
+  }
+  .pedidos__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -25px;
+  }
+  .pedidos__video video {
+    height: 450px;
+  }
+  .pedidos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .pedidos__contenedor {
+    height: 100%;
+    width: 95%;
+  }
+  .pedidos__pregunta {
+    width: auto;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    text-align: center;
+  }
+  .pedidos__respuesta {
+    margin-bottom: 50px;
+    font-size: 1em;
+    font-weight: 800;
+    line-height: 1.3em;
+    text-align: center;
+  }
+  .pedidos__respuesta li {
+    line-height: 1.3em;
+    width: 90%;
+  }
+  /* PREGUNTAS FRECUENTES */
+  .prefre__titulo {
+    font-size: 35px;
+  }
+  .prefre__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -25px;
+  }
+  .prefre__padre {
+    width: auto;
+  }
+  .prefre {
+    width: 230px;
+    height: 350px;
+    background-color: #a6cada;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+    border-radius: 10px;
+  }
+  .prefre__frontal--pregunta {
+    text-align: center;
+    padding: 10px;
+  }
+  .prefre__reverso--respuesta {
+    text-align: center;
+    padding: 10px;
+    padding-top: 15px;
+  }
+  .prefre__pregunta {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;
+  }
+  .prefre__respuesta {
+    font-size: .9em;
+    text-align: center;
+  }
+  /* RESEÑAS */
+  .reseñas__titulo {
+    font-size: 35px;
+  }
+  .reseñas__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -25px;
+  }
+  .col-8 {
+    width: auto;
+    margin: 0 80px;
+  }
+  .accordion-body {
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+  /* CONTACTO */
+  .contacto__titulo {
+    font-size: 35px;
+  }
+  .contacto__linea {
+    border-top: 2px solid #ffa2ff;
+    margin: 0 80px;
+    margin-top: -25px;
+  }
+  .contacto__redes {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacto__email {
+    width: 100%;
+    margin: 10px 20px;
+  }
+  .contacto__instagram {
+    width: 100%;
+    margin: 10px 20px;
+  }
+  .contacto__whatsapp {
+    width: 100%;
+    margin: 10px 20px;
+  }
+  .contacto__icon {
+    width: 220px;
+    height: 220px;
+  }
+  .contacto__icon i {
+    font-size: 120px;
+    color: white;
+    transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+  }
+  .contacto__info {
+    width: 220px;
+    height: 220px;
+  }
+  .contacto__info p {
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.9px;
+    line-height: 25px;
+  }
+  .contacto__info input {
+    padding: 0 10px;
+    font-size: 1em;
+  }
+  .formulario {
+    margin-top: 40px;
+  }
+  .formulario__subtitulo {
+    font-size: 30px;
+  }
+  .formulario__item {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+  .formulario__item input,
+  textarea {
+    width: auto;
+    padding: 15px;
+    margin: 5px;
+  }
+  .formulario__enviar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+  }
+  .formulario__enviar .btn3 {
+    width: auto;
+    padding: 15px;
+    margin: 5px;
+  }
+  .footer__box {
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: space-between;
+    /* padding-left: 80px; */
+  }
+  .footer__contenido {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 50px;
+  }
+  .footer__contenido1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .footer__logo img {
+    /* Logo AP */
+    width: 120px;
+  }
+  .footer__contenido .footer__texto {
+    /* Emprendimiento personal */
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    font-size: 15px;
+    color: dimgray;
+    max-width: 90%;
+    margin-top: 10px;
+  }
+  .footer__contenido1 h2 {
+    /* Conectá Conmigo */
+    font-weight: 700;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  .footer__box .fa-brands {
+    /* Iconos Redes Sociales */
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 15px;
+  }
+  .footer__box .fa-envelope {
+    /* Icono Email */
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 15px;
+  }
+  .footer__box a {
+    text-decoration: none;
+    color: dimgray;
+    font-size: 15px;
+  }
+  .footer__copyright p {
+    /* Antonela Poveda Arte - Argentina - © 2022 */
+    font-family: 'Poiret One', cursive;
+    margin-top: 15px;
+    font-weight: 800;
+    font-size: 15px;
+  }
+}
+
+/* MEDIA QUERY CELULAR */
+@media screen and (max-width: 600px) {
+  /* MENÚ */
+  .logo img {
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  .menu__lineas {
+    display: block;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .menu__lineas i {
+    color: #ffa2ff;
+  }
+  .menu {
+    display: none;
+  }
+  .menu:target {
+    display: block;
+  }
+  .menu__enlaces--cerrado {
+    display: block;
+  }
+  .menu {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .menu__enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .menu .menu__enlaces li {
+    font-size: 1em;
+    margin: 0 10px;
+    padding-top: 10px;
+  }
+  .menu__cerrar {
+    margin-left: 20%;
+    font-size: 25px;
+    font-family: 'Permanent Marker', cursive;
+    color: #ffa2ff;
+  }
+  .menu__enlaces li:hover {
+    background: none;
+  }
+  .menu__enlaces .menu--activo a {
+    background: none;
+    border-bottom: 1px solid #21f3fa;
+    padding: 0;
+    border-radius: 0;
+  }
+  .boton__contenedor .boton--whatsapp {
+    display: none;
+  }
+  /* INICIO */
+  .sobreMi__titulo {
+    /* Hola, */
+    font-size: 40px;
+  }
+  .sobreMi__titulo1 {
+    /* soy Anto */
+    font-size: 60px;
+  }
+  .sobreMi__linea {
+    border-top: 1px solid #ffa2ff;
+    margin: 0 10px;
+    margin-top: -10px;
+  }
+  .sobreMi__contenedor {
+    /* Contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .sobreMi__texto {
+    /* Texto */
+    font-size: 1em;
+    width: 95%;
+    height: auto;
+    line-height: 140%;
+    margin-right: 0;
+    padding: 20px 20px;
+    margin-bottom: 0;
+  }
+  .sobreMi__foto {
+    /* Imagen */
+    width: 95%;
+    margin-top: 5px;
+    height: auto;
+    object-fit: cover;
+    margin-left: 0;
+  }
+  .miRinconcito__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px auto;
+  }
+  .miRinconcito__imagen {
+    width: 95%;
+    margin-bottom: -10px;
+  }
+  .miRinconcito__imagen1 {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .miRinconcito__titulo {
+    font-size: 20px;
+    height: 100%;
+    width: 95%;
+    line-height: 40px;
+    padding: 10px;
+    margin-bottom: -5px;
+  }
+  .btn {
+    grid-area: a;
+    text-align: center;
+    border: none;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    background-color: #a6cada;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-top: -5px;
+    padding: 30px 0 30px 0;
+    align-self: center;
+    box-shadow: 0 -6px 0 #fcc7f7;
+    width: 95%;
+  }
+  /* MI ARTE */
+  .miArte__titulo {
+    font-size: 30px;
+  }
+  .miArte__linea {
+    border-top: 1.5px solid #ffa2ff;
+    margin: 0 60px;
+    margin-top: -25px;
+  }
+  .miArte__contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    height: 100%;
+  }
+  .miArte__imagenes {
+    padding-top: 0;
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .miArte__imagenes img {
+    margin-top: 10px;
+  }
+  .miArte__overlay {
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+  }
+  .miArte__imagen--mate {
+    margin-top: 0;
+    top: -10px;
+  }
+  .miArte__imagen--mate1 {
+    margin-top: 0;
+    top: -10px;
+  }
+  .miArte__imagen--mate2 {
+    margin-top: 0;
+    top: -10px;
+  }
+  .miArte__imagen--perro2 {
+    margin-top: 0;
+    top: auto;
+  }
+  .miArte__imagen--perro3 {
+    margin-top: 0;
+    top: auto;
+  }
+  .miArte__imagen--perro4 {
+    margin-top: 0;
+    top: auto;
+  }
+  .miArte__imagen--abstracto {
+    margin-top: 0;
+    top: auto;
+  }
+  .miArte__imagen--gaucho {
+    margin-top: 0;
+    top: auto;
+  }
+  .miArte__imagen--cuenco {
+    margin-top: 0;
+    top: auto;
+  }
+  .miArte__comentarios {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .miArte__texto {
+    font-size: 20px;
+    letter-spacing: .8px;
+  }
+  .col-6 {
+    width: 90%;
+  }
+  #floatingTextarea2 {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .btn1 {
+    margin-top: 10px;
+    width: 90%;
+  }
+  .miArte__subtitulo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* PEDIDOS */
+  .pedidos__titulo {
+    font-size: 30px;
+  }
+  .pedidos__linea {
+    border-top: 1.5px solid #ffa2ff;
+    margin: 0 60px;
+    margin-top: -25px;
+  }
+  .pedidos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .pedidos__video video {
+    height: 400px;
+  }
+  .pedidos__contenedor {
+    height: 100%;
+    width: 95%;
+  }
+  .pedidos__pregunta {
+    text-align: center;
+    width: auto;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+  }
+  .pedidos__respuesta {
+    margin-bottom: 50px;
+    font-size: 1em;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.3em;
+  }
+  .pedidos__respuesta li {
+    line-height: 1.3em;
+    width: 90%;
+    text-align: center;
+  }
+  /* PREGUNTAS FRECUENTES */
+  .prefre__titulo {
+    font-size: 27px;
+  }
+  .prefre__linea {
+    border-top: 1.5px solid #ffa2ff;
+    margin: 0 60px;
+    margin-top: -25px;
+  }
+  .prefre__padre {
+    margin: 20px;
+    perspective: 1000px;
+    width: 80%;
+  }
+  .prefre {
+    width: auto;
+    height: 350px;
+  }
+  .prefre__frontal--respuesta {
+    padding: 0;
+  }
+  .prefre__pregunta {
+    font-size: 1.3em;
+    font-weight: 800;
+    text-align: center;
+  }
+  .prefre__respuesta {
+    font-size: .9em;
+    text-align: center;
+  }
+  /* RESEÑAS */
+  .reseñas__titulo {
+    font-size: 30px;
+  }
+  .reseñas__linea {
+    border-top: 1.5px solid #ffa2ff;
+    margin: 0 60px;
+    margin-top: -25px;
+  }
+  .col-8 {
+    width: auto;
+    margin: 0 10px;
+  }
+  .accordion-body {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  /* CONTACTO */
+  .contacto__titulo {
+    font-size: 30px;
+  }
+  .contacto__linea {
+    border-top: 1.5px solid #ffa2ff;
+    margin: 0 60px;
+    margin-top: -25px;
+  }
+  .contacto__redes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto__email {
+    width: 100%;
+    margin: 10px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto__instagram {
+    width: 100%;
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto__whatsapp {
+    width: 100%;
+    margin: 60px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto__icon {
+    width: 220px;
+    height: 220px;
+  }
+  .contacto__icon i {
+    font-size: 100px;
+    color: white;
+    transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+  }
+  .contacto__info {
+    width: 220px;
+    height: 220px;
+  }
+  .contacto__info p {
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.9px;
+    line-height: 25px;
+  }
+  .contacto__info input {
+    padding: 0 10px;
+    font-size: 1em;
+  }
+  .formulario {
+    margin-top: 40px;
+  }
+  .formulario__subtitulo {
+    font-size: 25px;
+  }
+  .formulario__item {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  .formulario__item input,
+  textarea {
+    width: auto;
+    padding: 15px;
+    margin: 5px;
+  }
+  .formulario__enviar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+  }
+  .formulario__enviar .btn3 {
+    width: auto;
+    padding: 15px;
+    margin: 5px;
+  }
+  .footer__contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__box {
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__contenido {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    align-content: center;
+  }
+  .footer__contenido1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: center;
+  }
+  .footer__contenido .footer__logo {
+    align-self: center;
+  }
+  .footer__contenido .footer__logo img {
+    /* Logo AP */
+    width: 120px;
+  }
+  .footer__contenido .footer__texto {
+    /* Emprendimiento personal */
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    font-size: 15px;
+    color: dimgray;
+    text-align: center;
+    max-width: 80%;
+    margin-top: 20px;
+  }
+  .footer__contenido1 h2 {
+    /* Conectá Conmigo */
+    font-weight: 700;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 22px;
+    border-bottom: 1.5px solid #ffa2ff;
+    text-align: center;
+  }
+  .footer__box .fa-brands {
+    /* Iconos Redes Sociales */
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 15px;
+  }
+  .footer__box .fa-envelope {
+    /* Icono Email */
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 15px;
+  }
+  .footer__box a {
+    text-decoration: none;
+    color: dimgray;
+    font-size: 15px;
+    text-align: center;
+  }
+  .footer__copyright {
+    max-width: auto;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0 10px 0;
+  }
+  .footer__copyright p {
+    /* Antonela Poveda Arte - Argentina - © 2022 */
+    font-family: 'Poiret One', cursive;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,386 @@
+/* ------------------------------------------- MI ARTE ------------------------------------------- */
+
+/* Menú */
+
+.miArte__titulo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-shadow: 4px 4px #21f3fa;
+    font-weight: 800;
+}
+
+.miArte__linea {
+    border-top: 3px solid rgb(255, 162, 255);
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 60px;
+    margin: 0 300px 0 300px;
+}
+
+.miArte__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5px;
+    background-color: #EFF3F5;
+}
+
+.miArte__imagenes img {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 0 1px rgb(192, 192, 192);
+    display: block;
+    height: 100%;
+}
+
+.miArte__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(252, 199, 247);
+    overflow: auto;
+  }
+
+.miArte__imagenes {
+    flex: 25%;
+    padding: 5px;
+}
+
+.miArte__imagen1 {
+    position: relative;
+}
+
+.miArte__imagen2 {
+    position: relative;
+}
+
+.miArte__imagen6 {
+    position: relative;
+}
+
+.miArte__imagen7 {
+    position: relative;
+}
+
+.miArte__imagen9 {
+    position: relative;
+}
+
+.miArte__imagen10 {
+    position: relative;
+}
+
+.miArte__imagen11 {
+    position: relative;
+}
+
+.miArte__imagen3 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.miArte__imagen4 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.miArte__imagen5 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.miArte__imagen8 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.miArte__imagen12 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.miArte__imagen13 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.miArte__imagen14 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.miArte__imagen15 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.miArte__imagen16 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.miArte__imagen17 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.miArte__imagen1:hover .miArte__overlay  {
+    opacity: .9;
+}
+
+.miArte__imagen5:hover .miArte__overlay {
+    opacity: 0.9;
+}
+
+.miArte__imagen6:hover .miArte__overlay {
+    opacity: 0.9;
+}
+
+.miArte__imagen7:hover .miArte__overlay {
+    opacity: .9;
+}
+
+.miArte__imagen9:hover .miArte__overlay {
+    opacity: .9;
+}
+
+.miArte__imagen10:hover .miArte__overlay {
+    opacity: .9;
+}
+
+.miArte__imagen11:hover .miArte__overlay {
+    opacity: .9;
+}
+
+.miArte__imagen16:hover .miArte__overlay {
+    opacity: .9;
+}
+
+.miArte__imagen2:hover .miArte__imagen--mate1  {
+    opacity: 1;
+    visibility: visible;
+}
+
+.miArte__imagen3:hover .miArte__imagen--gaucho  {
+    opacity: 1;
+    visibility: visible;
+    object-fit: cover;
+}
+
+.miArte__imagen4:hover .miArte__imagen--cuenco  {
+    opacity: 1;
+    visibility: visible;
+    object-fit: cover;
+}
+
+.miArte__imagen8:hover .miArte__imagen--abstracto  {
+    opacity: 1;
+    visibility: visible;
+    object-fit: cover;
+}
+
+.miArte__imagen12:hover .miArte__imagen--mate  {
+    opacity: 1;
+    visibility: visible;
+}
+
+.miArte__imagen13:hover .miArte__imagen--perro4  {
+    opacity: 1;
+    visibility: visible;
+    object-fit: cover;
+}
+
+.miArte__imagen14:hover .miArte__imagen--perro3  {
+    opacity: 1;
+    visibility: visible;
+}
+
+.miArte__imagen15:hover .miArte__imagen--mate2 {
+    opacity: 1;
+    visibility: visible;
+    object-fit: cover;
+}
+
+.miArte__imagen17:hover .miArte__imagen--perro2  {
+    opacity: 1;
+    visibility: visible;
+    object-fit: cover;
+}
+
+.miArte__imagen--mate {
+    visibility: hidden;
+    position: absolute;
+    top: -5px;
+    transition: 1s ease;
+    opacity: 0;
+}
+
+.miArte__imagen--mate1 {
+    visibility: hidden;
+    position: absolute;
+    top: -5px;
+    transition: 1s ease;
+    opacity: 0;
+}
+
+.miArte__imagen--mate2 {
+    visibility: hidden;
+    position: absolute;
+    top: -5px;
+    transition: 1s ease;
+    opacity: 0;
+    object-fit: cover;
+}
+
+.miArte__imagen--perro2 {
+    visibility: hidden;
+    position: absolute;
+    top: -6px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 1s ease;
+    opacity: 0;
+    object-fit: cover;
+}
+
+.miArte__imagen--perro3 {
+    visibility: hidden;
+    position: absolute;
+    top: -6px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 1s ease;
+    opacity: 0;
+}
+
+.miArte__imagen--perro4 {
+    visibility: hidden;
+    position: absolute;
+    top: -6px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 1s ease;
+    opacity: 0;
+    object-fit: cover;
+}
+
+.miArte__imagen--abstracto {
+    visibility: hidden;
+    position: absolute;
+    top: -6px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 1s ease;
+    opacity: 0;
+    object-fit: cover;
+}
+
+.miArte__imagen--gaucho {
+    visibility: hidden;
+    position: absolute;
+    top: -6px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 1s ease;
+    opacity: 0;
+    object-fit: cover;
+}
+
+.miArte__imagen--cuenco {
+    visibility: hidden;
+    position: absolute;
+    top: -6px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 1s ease;
+    opacity: 0;
+    object-fit: cover;
+}
+
+.miArte__texto {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    letter-spacing: 0px; /* 0.9 antes de bootstrap */
+  }
+
+.miArte__comentarios {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #e1e8eb;
+}
+
+.miArte__subtitulo {
+    font-family: 'Poiret One', cursive;
+    padding-top: 10px;
+}
+
+.form-floating {
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    font-size: 15px;
+    height: 100%;
+}
+
+.form-floating>label {  
+    left: 5px;
+    letter-spacing: 2px;
+}
+
+#floatingTextarea2 {
+    margin-left: 10px;
+    font-weight: 800;
+    border-radius: 0;
+    border:#a6d0e4 solid 2px;
+    background-color: rgb(254, 255, 253);
+}
+
+.btn1 {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 162, 255);
+    width: 200px;
+    border: none;
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.btn1:active {
+    background-color: #fd3efd;
+}
