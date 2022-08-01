@@ -17,6 +17,7 @@
     justify-content: space-between;
     align-items: center;
     background: rgb(255, 255, 255);
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
@@ -49,7 +50,7 @@
     flex-wrap: wrap;
     list-style-type: none;
     justify-items: flex-end;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .menu .menu__enlaces li {
@@ -123,7 +124,7 @@
 .banner {
     width: 100%;
     max-height: 1200px;
-    background-image: url(./imágenes/banner2.png);
+    background-image: url(./imágenes/banner.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -157,18 +158,18 @@ main {
     font-size: 45px;
     padding-top: 40px;
     font-weight: 900;
-    color: rgb(255, 162, 255);
+    color: rgb(245, 178, 91);
     text-shadow: 4px 4px black;
 }
 
 .sobreMi__titulo1 {
     /* soy Anto */
     font-family: 'Pacifico', cursive;
-    font-size: 80px;
+    font-size: 100px;
     text-align: center;
     padding-bottom: 40px;
     color: rgb(0, 0, 0);
-    text-shadow: 4px 4px rgb(255, 255, 255);
+    text-shadow: 4px 4px rgb(92, 194, 241);
     font-weight: 900;
 }
 
@@ -240,10 +241,10 @@ main {
 
 .sobreMi__linea {
     border-top: 3px solid rgb(255, 162, 255);
-    height: 0px;
+    height: 0;
     padding-top: 10px;
     padding-bottom: 20px;
-    margin: 0px 300px 0 300px;
+    margin: 0 300px 0 300px;
 }
 
 .sobreMi__texto {
@@ -301,7 +302,7 @@ span {
     font-family: 'Pacifico', cursive;
     font-size: 30px;
     background-color: rgb(252, 199, 247);
-    box-shadow: 0px 6px #a6cada;
+    box-shadow: 0 6px #a6cada;
     border-radius: 10px;
     text-align: center;
     grid-area: h1;
@@ -382,9 +383,9 @@ span {
     font-weight: 900;
     border-radius: 10px;
     margin-top: 500px;
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0 30px 0;
     align-self: center;
-    box-shadow: 0px -6px 0px rgb(252, 199, 247);
+    box-shadow: 0 -6px 0 rgb(252, 199, 247);
 }
 
 .btn:hover {
@@ -492,6 +493,7 @@ footer {
     /* Antonela Poveda Arte - Argentina - © 2022 */
     font-family: 'Poiret One', cursive;
     margin-top: 20px;
+    margin-bottom: 16px;
     font-weight: 800;
 }
 
@@ -507,13 +509,6 @@ footer {
 
 /* Menú */
 
-/* .menu__enlaces .menu--activo a {
-    background-color: rgb(252, 199, 247);
-    border-radius: 10px;
-    padding: 10px;
-}
- */
-
 .miArte__titulo {
     text-align: center;
     margin-top: 50px;
@@ -526,10 +521,10 @@ footer {
 
 .miArte__linea {
     border-top: 3px solid rgb(255, 162, 255);
-    height: 0px;
-    padding-top: 0px;
+    height: 0;
+    padding-top: 0;
     padding-bottom: 60px;
-    margin: 0px 300px 0 300px;
+    margin: 0 300px 0 300px;
 }
 
 .miArte__contenedor {
@@ -545,7 +540,7 @@ footer {
     width: 100%;
     margin-top: 5px;
     border-radius: 5px;
-    box-shadow: 1px 0px 1px rgb(192, 192, 192);
+    box-shadow: 1px 0 1px rgb(192, 192, 192);
     display: block;
     height: 100%;
 }
@@ -561,6 +556,7 @@ footer {
     opacity: 0;
     transition: .5s ease;
     background-color: rgb(252, 199, 247);
+    overflow: auto;
   }
 
 .miArte__imagenes {
@@ -837,7 +833,7 @@ footer {
 
 .miArte__texto {
     color: rgb(0, 0, 0);
-    font-size: 23px;
+    font-size: 22px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -924,11 +920,9 @@ footer {
     letter-spacing: 10px;
     color: rgb(75, 74, 74);
     margin-bottom: 20px;
-    /* border-bottom: rgb(236, 228, 228) solid 2px; */
 }
 
 .pedidos__respuesta {
-    /* background-color: #fcfde8; */
     margin-bottom: 50px;
     list-style: none;
     font-size: 1.1em;
@@ -948,10 +942,10 @@ footer {
 
 .pedidos__linea {
     border-top: 3px solid rgb(255, 162, 255);
-    height: 0px;
-    padding-top: 0px;
+    height: 0;
+    padding-top: 0;
     padding-bottom: 60px;
-    margin: 0px 300px 0 300px;
+    margin: 0 300px 0 300px;
 }
 
 .pedidos__respuesta li:hover {
@@ -999,10 +993,10 @@ footer {
 
 .prefre__linea {
     border-top: 3px solid rgb(255, 162, 255);
-    height: 0px;
-    padding-top: 0px;
+    height: 0;
+    padding-top: 0;
     padding-bottom: 60px;
-    margin: 0px 300px 0 300px;
+    margin: 0 300px 0 300px;
 }
 
 .prefre__contenedor {
@@ -1039,11 +1033,12 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     font-family: 'Poiret One', cursive;
     font-weight: 800;
-    letter-spacing: 0px; /* 0.9 antes de Bootstrap */
+    letter-spacing: 0; /* 0.9 antes de Bootstrap */
 }
 
 .prefre__frontal--pregunta {
@@ -1080,8 +1075,8 @@ footer {
 .prefre__respuesta,
 ul {
     list-style: none;
-    margin-bottom: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .prefre__respuesta ul,
@@ -1130,10 +1125,10 @@ li {
 
 .reseñas__linea {
     border-top: 3px solid rgb(255, 162, 255);
-    height: 0px;
-    padding-top: 0px;
+    height: 0;
+    padding-top: 0;
     padding-bottom: 60px;
-    margin: 0px 300px 0 300px;
+    margin: 0 300px 0 300px;
 }
 
 .accordion {
@@ -1192,10 +1187,10 @@ li {
 
 .contacto__linea {
     border-top: 3px solid rgb(255, 162, 255);
-    height: 0px;
-    padding-top: 0px;
+    height: 0;
+    padding-top: 0;
     padding-bottom: 60px;
-    margin: 0px 300px 0 300px;
+    margin: 0 300px 0 300px;
 }
 
 .contacto__redes {
@@ -1315,17 +1310,17 @@ li {
 
 .contacto__email:hover .contacto__icon {
     margin-top: -110px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0px;
 }
 
 .contacto__instagram:hover .contacto__icon {
     margin-top: -110px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0px;
 }
 
 .contacto__whatsapp:hover .contacto__icon {
     margin-top: -110px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0px;
 }
 
 .contacto__info p {
@@ -1351,7 +1346,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 60px;
     padding-bottom: 50px;
 }
@@ -1376,7 +1371,7 @@ li {
     text-align: center;
     font-family: 'Pacifico', cursive;
     font-size: 35px;
-    padding: 30px 0px;
+    padding: 30px 0;
     text-shadow: 4px 4px rgb(255, 255, 255);
 }
 
@@ -1475,7 +1470,7 @@ textarea:hover {
 
     .menu .menu__enlaces li {
         font-size: 1.1em;
-        margin: 0px 10px;
+        margin: 0 10px;
         padding-top: 15px;
     }
 
@@ -1493,8 +1488,8 @@ textarea:hover {
     .menu__enlaces .menu--activo a {
         background: none;
         border-bottom: 1px solid rgb(33, 243, 250);
-        padding: 0px;
-        border-radius: 0px;
+        padding: 0;
+        border-radius: 0;
     }
 
     .boton__contenedor .boton--whatsapp {
@@ -1515,7 +1510,7 @@ textarea:hover {
 
     .sobreMi__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -10px;
     }
 
@@ -1536,7 +1531,7 @@ textarea:hover {
         height: 300px;
         line-height: 140%;
         overflow: none;
-        margin-right: 0px;
+        margin-right: 0;
         margin-bottom: 0;
     }
 
@@ -1590,9 +1585,9 @@ textarea:hover {
         font-weight: 900;
         border-radius: 10px;
         margin-top: -5px;
-        padding: 30px 0px 30px 0px;
+        padding: 30px 0 30px 0;
         align-self: center;
-        box-shadow: 0px -6px 0px rgb(252, 199, 247);
+        box-shadow: 0 -6px 0 rgb(252, 199, 247);
         width: 95%;
     }
 
@@ -1604,7 +1599,7 @@ textarea:hover {
 
     .miArte__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -25px;
     }
 
@@ -1620,8 +1615,8 @@ textarea:hover {
     }
 
     .miArte__imagenes {
-        padding-top: 0px;
-        margin-top: 0px;
+        padding-top: 0;
+        margin-top: 0;
         height: 100%;
         width: 80%;
     }
@@ -1633,7 +1628,7 @@ textarea:hover {
     .miArte__overlay {
         height: auto;
         width: 100%;
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .miArte__comentarios {
@@ -1673,7 +1668,7 @@ textarea:hover {
 
     .pedidos__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -25px;
     }
 
@@ -1722,7 +1717,7 @@ textarea:hover {
 
     .prefre__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -25px;
     }
 
@@ -1768,13 +1763,13 @@ textarea:hover {
 
     .reseñas__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -25px;
     }
 
     .col-8 {
         width: auto;
-        margin: 0 50px
+        margin: 0 50px;
     }
 
     .accordion-body {
@@ -1782,7 +1777,6 @@ textarea:hover {
     line-height: 25px;
     }
 
-    
     /* CONTACTO */
 
     .contacto__titulo {
@@ -1791,7 +1785,7 @@ textarea:hover {
 
     .contacto__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -25px;
     }
 
@@ -2000,7 +1994,7 @@ textarea:hover {
 
     .sobreMi__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -10px;
     }
 
@@ -2021,7 +2015,7 @@ textarea:hover {
         height: 300px;
         line-height: 140%;
         overflow: none;
-        margin-right: 0px;
+        margin-right: 0;
         margin-bottom: 0;
     }
 
@@ -2075,9 +2069,9 @@ textarea:hover {
         font-weight: 900;
         border-radius: 10px;
         margin-top: -5px;
-        padding: 30px 0px 30px 0px;
+        padding: 30px 0 30px 0;
         align-self: center;
-        box-shadow: 0px -6px 0px rgb(252, 199, 247);
+        box-shadow: 0 -6px 0 rgb(252, 199, 247);
         width: 95%;
     }
 
@@ -2089,7 +2083,7 @@ textarea:hover {
 
     .miArte__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -25px;
     }
 
@@ -2105,8 +2099,8 @@ textarea:hover {
     }
 
     .miArte__imagenes {
-        padding-top: 0px;
-        margin-top: 0px;
+        padding-top: 0;
+        margin-top: 0;
         height: 100%;
         width: 60%;
     }
@@ -2118,7 +2112,7 @@ textarea:hover {
     .miArte__overlay {
         height: auto;
         width: 100%;
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .miArte__subtitulo h2 {
@@ -2162,7 +2156,7 @@ textarea:hover {
 
     .pedidos__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -25px;
     }
 
@@ -2201,7 +2195,6 @@ textarea:hover {
     .pedidos__respuesta li {
         line-height: 1.3em;
         width: 90%;
-
     }
 
     /* PREGUNTAS FRECUENTES */
@@ -2212,7 +2205,7 @@ textarea:hover {
 
     .prefre__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -25px;
     }
 
@@ -2250,7 +2243,6 @@ textarea:hover {
     .prefre__respuesta {
         font-size: .9em;
         text-align: center;
-        
     }
 
     /* RESEÑAS */
@@ -2261,7 +2253,7 @@ textarea:hover {
 
     .reseñas__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -25px;
     }
 
@@ -2283,7 +2275,7 @@ textarea:hover {
 
     .contacto__linea {
         border-top: 2px solid rgb(255, 162, 255);
-        margin: 0px 80px;
+        margin: 0 80px;
         margin-top: -25px;
     }
 
@@ -2334,7 +2326,7 @@ textarea:hover {
     }
 
     .contacto__info input {
-        padding: 0px 10px;
+        padding: 0 10px;
         font-size: 1em;
     }
 
@@ -2509,7 +2501,7 @@ textarea:hover {
 
     .menu .menu__enlaces li {
         font-size: 1em;
-        margin: 0px 10px;
+        margin: 0 10px;
         padding-top: 10px;
     }
 
@@ -2527,8 +2519,8 @@ textarea:hover {
     .menu__enlaces .menu--activo a {
         background: none;
         border-bottom: 1px solid rgb(33, 243, 250);
-        padding: 0px;
-        border-radius: 0px;
+        padding: 0;
+        border-radius: 0;
     }
 
     .boton__contenedor .boton--whatsapp {
@@ -2549,7 +2541,7 @@ textarea:hover {
 
     .sobreMi__linea {
         border-top: 1px solid rgb(255, 162, 255);
-        margin: 0px 10px;
+        margin: 0 10px;
         margin-top: -10px;
     }
 
@@ -2569,7 +2561,7 @@ textarea:hover {
         width: 95%;
         height: auto;
         line-height: 140%;
-        margin-right: 0px;
+        margin-right: 0;
         padding: 20px 20px;
         margin-bottom: 0;
     }
@@ -2624,9 +2616,9 @@ textarea:hover {
         font-weight: 900;
         border-radius: 10px;
         margin-top: -5px;
-        padding: 30px 0px 30px 0px;
+        padding: 30px 0 30px 0;
         align-self: center;
-        box-shadow: 0px -6px 0px rgb(252, 199, 247);
+        box-shadow: 0 -6px 0 rgb(252, 199, 247);
         width: 95%;
     }
 
@@ -2638,7 +2630,7 @@ textarea:hover {
 
     .miArte__linea {
         border-top: 1.5px solid rgb(255, 162, 255);
-        margin: 0px 60px;
+        margin: 0 60px;
         margin-top: -25px;
     }
 
@@ -2654,8 +2646,8 @@ textarea:hover {
     }
 
     .miArte__imagenes {
-        padding-top: 0px;
-        margin-top: 0px;
+        padding-top: 0;
+        margin-top: 0;
         height: 100%;
         width: 100%;
     }
@@ -2667,51 +2659,51 @@ textarea:hover {
     .miArte__overlay {
         height: auto;
         width: 100%;
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .miArte__imagen--mate {
-        margin-top: 0px;
+        margin-top: 0;
         top: -10px;
     }
 
     .miArte__imagen--mate1 {
-        margin-top: 0px;
+        margin-top: 0;
         top: -10px;
     }
 
     .miArte__imagen--mate2 {
-        margin-top: 0px;
+        margin-top: 0;
         top: -10px;
     }
 
     .miArte__imagen--perro2 {
-        margin-top: 0px;
+        margin-top: 0;
         top: auto;
     }
     
     .miArte__imagen--perro3 {
-        margin-top: 0px;
+        margin-top: 0;
         top: auto;
     }
     
     .miArte__imagen--perro4 {
-        margin-top: 0px;
+        margin-top: 0;
         top: auto;
     }
     
     .miArte__imagen--abstracto {
-        margin-top: 0px;
+        margin-top: 0;
         top: auto;
     }
     
     .miArte__imagen--gaucho {
-       margin-top: 0px;
+       margin-top: 0;
        top: auto;
     }
     
     .miArte__imagen--cuenco {
-        margin-top: 0px;
+        margin-top: 0;
         top: auto;
     }
 
@@ -2752,7 +2744,7 @@ textarea:hover {
 
     .pedidos__linea {
         border-top: 1.5px solid rgb(255, 162, 255);
-        margin: 0px 60px;
+        margin: 0 60px;
         margin-top: -25px;
     }
 
@@ -2802,7 +2794,7 @@ textarea:hover {
 
     .prefre__linea {
         border-top: 1.5px solid rgb(255, 162, 255);
-        margin: 0px 60px;
+        margin: 0 60px;
         margin-top: -25px;
     }
 
@@ -2830,7 +2822,6 @@ textarea:hover {
     .prefre__respuesta {
         font-size: .9em;
         text-align: center;
-        
     }
 
     /* RESEÑAS */
@@ -2841,7 +2832,7 @@ textarea:hover {
 
     .reseñas__linea {
         border-top: 1.5px solid rgb(255, 162, 255);
-        margin: 0px 60px;
+        margin: 0 60px;
         margin-top: -25px;
     }
 
@@ -2863,7 +2854,7 @@ textarea:hover {
 
     .contacto__linea {
         border-top: 1.5px solid rgb(255, 162, 255);
-        margin: 0px 60px;
+        margin: 0 60px;
         margin-top: -25px;
     }
 
@@ -2875,7 +2866,7 @@ textarea:hover {
 
     .contacto__email {
         width: 100%;
-        margin: 10px 0px 60px 0px;
+        margin: 10px 0 60px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2883,7 +2874,7 @@ textarea:hover {
 
     .contacto__instagram {
         width: 100%;
-        margin: 60px 0px;
+        margin: 60px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2891,7 +2882,7 @@ textarea:hover {
 
     .contacto__whatsapp {
         width: 100%;
-        margin: 60px 0px 10px 0px;
+        margin: 60px 0 10px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2921,7 +2912,7 @@ textarea:hover {
     }
 
     .contacto__info input {
-        padding: 0px 10px;
+        padding: 0 10px;
         font-size: 1em;
     }
 
@@ -3056,25 +3047,9 @@ textarea:hover {
         /* Antonela Poveda Arte - Argentina - © 2022 */
         font-family: 'Poiret One', cursive;
         margin-top: 15px;
+        margin-bottom: 0;
         font-weight: 800;
         font-size: 12px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
