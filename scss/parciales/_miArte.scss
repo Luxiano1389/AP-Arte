@@ -57,90 +57,62 @@
     padding: 5px;
 }
 
-.miArte__imagen1 {
-    position: relative;
-}
+$clase: miArte__imagen;
 
-.miArte__imagen2 {
-    position: relative;
-}
-
-.miArte__imagen6 {
-    position: relative;
-}
-
-.miArte__imagen7 {
-    position: relative;
-}
-
-.miArte__imagen9 {
-    position: relative;
-}
-
-.miArte__imagen10 {
-    position: relative;
-}
-
-.miArte__imagen11 {
-    position: relative;
+@for $clase from 1 through 17 {
+    @each $position in relative {
+        .miArte__imagen#{$clase} {
+            position: $position;
+        }
+    }
 }
 
 .miArte__imagen3 {
-    position: relative;
     height: 100%;
     width: 100%;
 }
 
 .miArte__imagen4 {
-    position: relative;
     height: 100%;
     width: 100%;
 }
 
 .miArte__imagen5 {
-    position: relative;
     height: 100%;
     width: 100%;
 }
 
 .miArte__imagen8 {
-    position: relative;
     height: 100%;
     width: 100%;
 }
 
 .miArte__imagen12 {
-    position: relative;
     height: 100%;
     width: 100%;
 }
 
 .miArte__imagen13 {
-    position: relative;
     height: 100%;
     width: 100%;
 }
 
 .miArte__imagen14 {
-    position: relative;
     height: 100%;
     width: 100%;
 }
 
 .miArte__imagen15 {
-    position: relative;
     height: 100%;
     width: 100%;
 }
 
 .miArte__imagen16 {
-    position: relative;
     height: 100%;
     width: 100%;
 }
 
 .miArte__imagen17 {
-    position: relative;
     height: 100%;
     width: 100%;
 }

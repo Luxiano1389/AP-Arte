@@ -22,10 +22,16 @@
     margin: 0 300px 0 300px;
 }
 
+$estilos: (
+    color: #EFF3F5,
+    padding-bottom: 70px,
+    padding-top: 70px
+);
+
 .accordion {
-    background-color: #EFF3F5;
-    padding-bottom: 70px;
-    padding-top: 70px;
+    background-color: map-get($estilos, color);
+    padding-bottom: map-get($estilos, padding-bottom);
+    padding-top: map-get($estilos, padding-top);
 }
 
 .accordion-header {
