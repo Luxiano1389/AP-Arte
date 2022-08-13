@@ -1,6 +1,6 @@
 /* Footer */
 
-footer {
+/* footer {
     background-color: white;
 }
 
@@ -32,16 +32,16 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     width: auto;
-}
+} */
 
-.footer__logo img {
+/* .footer__logo img { */
     /* Logo AP */
-    width: 150px;
-}
+    /* width: 150px; */
+/* }
 
-.footer__texto {
+.footer__texto { */
     /* Emprendimiento personal */
-    font-family: 'Poiret One', cursive;
+    /* font-family: 'Poiret One', cursive;
     font-weight: 900;
     font-size: 18px;
     color: dimgray;
@@ -50,25 +50,25 @@ footer {
     margin-top: 20px;
 }
 
-.footer__contenido1 h2 {
+.footer__contenido1 h2 { */
     /* Conectá Conmigo */
-    font-weight: 700;
+    /* font-weight: 700;
     font-family: 'Poiret One', cursive;
     margin-bottom: 20px;
     font-size: 25px;
 }
-
-.footer__box .fa-brands {
+ */
+/* .footer__box .fa-brands { */
     /* Iconos Redes Sociales */
-    margin-right: 10px;
+   /*  margin-right: 10px;
     margin-bottom: 20px;
     color: rgb(0, 0, 0);
     font-size: 20px;
 }
 
-.footer__box .fa-envelope {
+.footer__box .fa-envelope { */
     /* Icono Email */
-    margin-right: 10px;
+    /* margin-right: 10px;
     margin-bottom: 20px;
     color: rgb(0, 0, 0);
     font-size: 20px;
@@ -92,19 +92,38 @@ footer {
     padding: 0;
 }
 
-.footer__copyright p {
+.footer__copyright p { */
     /* Antonela Poveda Arte - Argentina - © 2022 */
-    font-family: 'Poiret One', cursive;
+   /*  font-family: 'Poiret One', cursive;
     margin-top: 20px;
     margin-bottom: 0;
     padding-bottom: 16px;
     font-weight: 800;
 }
 
-.footer__copyright hr {
+.footer__copyright hr { */
     /* Línea divisoria */
-    border: none;
+    /* border: none;
     height: 3px;
     background-color: rgb(255, 162, 255);
     opacity: 1;
+} */
+
+footer { 
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.text-muted {
+    padding-right: 0px;
+    padding-left: 20px;
+}
+
+.footer__logo {
+    width: 100px;
+}
+
+.footer__links {
+    padding-right: 20px ;
 }

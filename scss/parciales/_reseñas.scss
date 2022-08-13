@@ -9,17 +9,17 @@
     margin-top: 50px;
     margin-bottom: 40px;
     font-family: 'Pacifico', cursive;
-    font-size: 50px;
+    font-size: 60px;
     text-shadow: 4px 4px rgb(33, 243, 250);
     font-weight: 800;
 }
 
 .reseñas__linea {
-    border-top: 3px solid rgb(255, 162, 255);
+    border-top: 1px solid rgb(255, 162, 255);
     height: 0;
     padding-top: 0;
     padding-bottom: 60px;
-    margin: 0 300px 0 300px;
+    margin: 0 500px 0 500px;
 }
 
 $estilos: (
@@ -49,9 +49,8 @@ $estilos: (
 }
 
 .accordion-body {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Montserrat', cursive;
     font-size: 1.1rem;
-    font-weight: 700;
     margin: 20px;
     line-height: 30px;
 }

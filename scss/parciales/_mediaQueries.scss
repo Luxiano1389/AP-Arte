@@ -4,185 +4,154 @@
 
     /* MENÚ */
 
-    .logo img {
-        width: 120px;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-
-    .menu__lineas {
-        display: block;
-        font-size: 20px;
-        margin-right: 10px;
-    }
-
-    .menu__lineas i {
-        color: rgb(255, 162, 255);
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .menu .menu_enlaces:target {
-        display: block;
-    }
-
-    .menu:target {
-        display: block;
-    }
-
-    .menu__enlaces--cerrado {
-        display: block;
-    }
-
-    .menu {
-        background-color: white;
-        height: 100vh;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-    .menu__enlaces {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        width: 100%;
-    }
-
-    .menu .menu__enlaces li {
-        font-size: 1.1em;
-        margin: 0 10px;
-        padding-top: 15px;
-    }
-
-    .menu__cerrar {
-        margin-left: 20%;
-        font-size: 25px;
-        font-family: 'Permanent Marker', cursive;
-        color: rgb(255, 162, 255);
-    }
-
-    .menu__enlaces li:hover {
-        background: none;
-    }
-
-    .menu__enlaces .menu--activo a {
-        background: none;
-        border-bottom: 1px solid rgb(33, 243, 250);
-        padding: 0;
-        border-radius: 0;
+    .nav-item { 
+        text-align: right;
     }
 
     .boton__contenedor .boton--whatsapp {
         display: none;
     }
 
+    /* FOOTER */
+
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .footer__links { 
+        display: none;
+    }
+
+    .footer__logo {
+        width: 100px;
+    }
+
+    .text-muted {
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+    }
+
     /* INICIO */
 
-    .sobreMi__titulo {
-        /* Hola, */
-        font-size: 40px;
+    .navbar-brand img {
+        width: 100px;
     }
 
-    .sobreMi__titulo1 {
-        /* soy Anto */
-        font-size: 60px;
+    .imagen__inicio {
+        width: 100%;
+        display: inline-block;
     }
 
-    .sobreMi__linea {
-        border-top: 2px solid rgb(255, 162, 255);
-        margin: 0 80px;
-        margin-top: -10px;
-    }
-
-    .sobreMi__contenedor {
-        /* Contenedor */
+    .col-6 {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        width: 100%;
     }
 
-    .sobreMi__texto {
-        /* Texto */
-        font-size: 1.2em;
-        width: 95%;
-        padding: 50px 20px;
-        height: 300px;
-        line-height: 140%;
-        overflow: none;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-
-    .sobreMi__foto {
-        /* Imagen */
-        width: 95%;
-        margin-top: 5px;
-        height: 300px;
-        object-fit: cover;
-        margin-left: 0;
-    }
-
-    .miRinconcito__contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 30px auto;
-    }
-
-    .miRinconcito__imagen {
-        width: 95%;
-        margin-bottom: -10px;
-    }
-
-    .miRinconcito__imagen1 {
-        width: 95%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .miRinconcito__titulo {
-        font-size: 25px;
-        height: 100%;
-        width: 95%;
-        line-height: 40px;
-        padding: 10px;
-        margin-bottom: -5px;
-    }
-
-    .btn {
-        grid-area: a;
+    .titulo__inicio {
+        font-size: 70px ;
+        left: 30%;
+        margin: auto;
+        margin-top: 200px;
+        margin-bottom: 10px;
         text-align: center;
-        border: none;
-        font-family: 'Poiret One', cursive;
-        text-decoration: none;
-        font-size: 25px;
-        color: black;
-        background-color: #a6cada;
-        font-weight: 900;
-        border-radius: 10px;
-        margin-top: -5px;
-        padding: 30px 0 30px 0;
-        align-self: center;
-        box-shadow: 0 -6px 0 rgb(252, 199, 247);
+    }
+
+    .sobreMi__inicio {
+        margin-right: 0;
+        margin: auto;
+        padding-top: 200px;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .redes__inicio {
+        background: white;
+        height: auto;
+        padding: 0;
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-3 {
+        width: auto;
+    }
+
+    .col-5 {
+        width: 100%;
+    }
+
+    .redes__titulo {
+        font-size: 2.4rem;
+        font-family: 'Gruffly', cursive;
+        margin-left: 0%;
+    }
+
+    .redes__imagen {
+        display: none;
+    }
+
+    .tarjetas__inicio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .video__contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video__inicio {
         width: 95%;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container { 
+        width: 100%;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .tarjetas__inicio {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .tarjetas__boton {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .seguime__redes {
+        padding: 30px 0;
+    }
+
+    .seguime__redes i {
+        font-size: 30px;
     }
 
     /* MI ARTE */
 
     .miArte__titulo {
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .miArte__linea {
-        border-top: 2px solid rgb(255, 162, 255);
+        border-top: 1px solid rgb(255, 162, 255);
         margin: 0 80px;
         margin-top: -25px;
     }
@@ -229,6 +198,10 @@
         width: 80%;
     }
 
+    .form-floating {
+        width: 90%;
+    }
+
     #floatingTextarea2 {
         margin: auto;
         margin-top: 20px;
@@ -239,6 +212,11 @@
         width: 20%;
     }
 
+    .form-floating>label {  
+        left: 5px;
+        top: 10px;
+    }
+
     .miArte__subtitulo {
         margin-bottom: 20px;
         text-align: center;
@@ -247,11 +225,11 @@
     /* PEDIDOS */
 
     .pedidos__titulo {
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .pedidos__linea {
-        border-top: 2px solid rgb(255, 162, 255);
+        border-top: 1px solid rgb(255, 162, 255);
         margin: 0 80px;
         margin-top: -25px;
     }
@@ -281,9 +259,8 @@
     }
 
     .pedidos__respuesta {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         font-size: 1em;
-        font-weight: 800;
         line-height: 1.3em;
         text-align: center;
     }
@@ -296,11 +273,11 @@
     /* PREGUNTAS FRECUENTES */
 
     .prefre__titulo {
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .prefre__linea {
-        border-top: 2px solid rgb(255, 162, 255);
+        border-top: 1px solid rgb(255, 162, 255);
         margin: 0 80px;
         margin-top: -25px;
     }
@@ -331,8 +308,8 @@
     }
 
     .prefre__pregunta {
-        font-size: 1.5em;
-        font-weight: 800;
+        font-size: 1.3em;
+        font-weight: 600;
     }
     
     .prefre__respuesta {
@@ -342,11 +319,11 @@
     /* RESEÑAS */
 
     .reseñas__titulo {
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .reseñas__linea {
-        border-top: 2px solid rgb(255, 162, 255);
+        border-top: 1px solid rgb(255, 162, 255);
         margin: 0 80px;
         margin-top: -25px;
     }
@@ -357,18 +334,18 @@
     }
 
     .accordion-body {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 25px;
     }
 
     /* CONTACTO */
 
     .contacto__titulo {
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .contacto__linea {
-        border-top: 2px solid rgb(255, 162, 255);
+        border-top: 1px solid rgb(255, 162, 255);
         margin: 0 80px;
         margin-top: -25px;
     }
@@ -415,13 +392,13 @@
     .contacto__info p {
         font-size: 1em;
         text-align: center;
-        letter-spacing: 0.8px;
-        line-height: 25px;
+        letter-spacing: normal;
+        line-height: 20px;
     }
 
     .contacto__info input {
-        padding: 0px 10px;
-        font-size: .8em;
+        padding: 10px 10px;
+        font-size: .7em;
     }
 
     .formulario {
@@ -459,214 +436,163 @@
         padding: 15px;
         margin: 5px;
     }
-
-    .footer__box {
-        font-family: 'Poiret One', cursive;
-        font-weight: 900;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-items: space-between;
-        /* padding-left: 80px; */
-    }
-
-    .footer__contenido {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-        justify-content: space-between;
-        align-content: center;
-        margin-left: 50px;
-    }
-
-    .footer__contenido1 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: center;
-    }
-
-    .footer__logo img {
-        /* Logo AP */
-        width: 120px;
-    }
-
-    .footer__contenido .footer__texto {
-        /* Emprendimiento personal */
-        font-family: 'Poiret One', cursive;
-        font-weight: 900;
-        font-size: 15px;
-        color: dimgray;
-        max-width: 90%;
-        margin-top: 10px;
-    }
-
-    .footer__contenido1 h2 {
-        /* Conectá Conmigo */
-        font-weight: 700;
-        font-family: 'Poiret One', cursive;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        font-size: 22px;
-    }
-
-    .footer__box .fa-brands {
-        /* Iconos Redes Sociales */
-        margin-right: 10px;
-        margin-bottom: 20px;
-        color: rgb(0, 0, 0);
-        font-size: 15px;
-    }
-
-    .footer__box .fa-envelope {
-        /* Icono Email */
-        margin-right: 10px;
-        margin-bottom: 20px;
-        color: rgb(0, 0, 0);
-        font-size: 15px;
-    }
-
-    .footer__box a {
-        text-decoration: none;
-        color: dimgray;
-        font-size: 15px;
-    }
-
-    .footer__copyright p {
-        /* Antonela Poveda Arte - Argentina - © 2022 */
-        font-family: 'Poiret One', cursive;
-        margin-top: 15px;
-        font-weight: 800;
-        font-size: 15px;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
     /* MENÚ */
 
-    .logo img {
-        width: 120px;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-
-    .menu .menu__enlaces li {
-        list-style: none;
-        padding: 10px 5px 10px 10px;
-        font-family: 'Permanent Marker', cursive;
-        font-size: 16px;
+    .nav-item { 
+        text-align: right;
     }
 
     .boton__contenedor .boton--whatsapp {
         display: none;
     }
 
+    /* FOOTER */
+
+    .footer {
+        flex-direction: column-reverse !important;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .footer__links { 
+        display: none;
+    }
+
+    .footer__logo {
+        width: 100px;
+        margin-bottom: 16px;
+    }
+
+    .me-md-auto {
+        margin-right: inherit !important;
+    }
+
+    .text-muted {
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .col-md-5 {
+        width: 100%;
+    }
+
     /* INICIO */
 
-    .sobreMi__titulo {
-        /* Hola, */
-        font-size: 35px;
+    .navbar-brand img {
+        width: 100px;
     }
 
-    .sobreMi__titulo1 {
-        /* soy Anto */
-        font-size: 65px;
+    .imagen__inicio {
+        width: 700px;
+        display: inline-block;
     }
 
-    .sobreMi__linea {
-        border-top: 2px solid rgb(255, 162, 255);
-        margin: 0 80px;
-        margin-top: -10px;
-    }
-
-    .sobreMi__contenedor {
-        /* Contenedor */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .sobreMi__texto {
-        /* Texto */
-        font-size: 1.2em;
-        width: 95%;
-        padding: 50px 20px;
-        height: 300px;
-        line-height: 140%;
-        overflow: none;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-
-    .sobreMi__foto {
-        /* Imagen */
-        width: 95%;
-        margin-top: 5px;
-        height: 300px;
-        object-fit: cover;
-        margin-left: 0;
-    }
-
-    .miRinconcito__contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 30px auto;
-    }
-
-    .miRinconcito__imagen {
-        width: 95%;
-        margin-bottom: -10px;
-    }
-
-    .miRinconcito__imagen1 {
-        width: 95%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .miRinconcito__titulo {
-        font-size: 25px;
-        height: 100%;
-        width: 95%;
-        line-height: 40px;
-        padding: 10px;
-        margin-bottom: -5px;
-    }
-
-    .btn {
-        grid-area: a;
+    .titulo__inicio {
+        font-size: 70px ;
+        left: 6%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
         text-align: center;
-        border: none;
-        font-family: 'Poiret One', cursive;
-        text-decoration: none;
-        font-size: 25px;
-        color: black;
-        background-color: #a6cada;
-        font-weight: 900;
-        border-radius: 10px;
-        margin-top: -5px;
-        padding: 30px 0 30px 0;
-        align-self: center;
-        box-shadow: 0 -6px 0 rgb(252, 199, 247);
-        width: 95%;
     }
 
+    .sobreMi__inicio {
+        margin-right: 0;
+        margin: auto;
+        padding-top: 200px;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .redes__inicio {
+        background: white;
+        height: auto;
+        padding: 0;
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-3 {
+        width: auto;
+    }
+
+    .col-5 {
+        width: 100%;
+    }
+
+    .redes__titulo {
+        font-size: 2.6rem;
+        font-family: 'Gruffly', cursive;
+        margin-left: 0%;
+        margin-bottom: 30px;
+    }
+
+    .redes__imagen {
+        display: none;
+    }
+
+    .tarjetas__inicio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .video__contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video__inicio {
+        width: 95%;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container { 
+        width: 100%;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .tarjetas__inicio {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .tarjetas__boton {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .seguime__redes {
+        padding: 30px 0;
+    }
+
+    .seguime__redes i {
+        font-size: 30px;
+    }
     /* MI ARTE */
 
     .miArte__titulo {
-        font-size: 35px;
+        font-size: 60px;
     }
 
     .miArte__linea {
-        border-top: 2px solid rgb(255, 162, 255);
+        border-top: 1px solid rgb(255, 162, 255);
         margin: 0 80px;
         margin-top: -25px;
     }
@@ -735,11 +661,11 @@
     /* PEDIDOS */
 
     .pedidos__titulo {
-        font-size: 35px;
+        font-size: 60px;
     }
 
     .pedidos__linea {
-        border-top: 2px solid rgb(255, 162, 255);
+        border-top: 1px solid rgb(255, 162, 255);
         margin: 0 80px;
         margin-top: -25px;
     }
@@ -769,9 +695,8 @@
     }
 
     .pedidos__respuesta {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         font-size: 1em;
-        font-weight: 800;
         line-height: 1.3em;
         text-align: center;
     }
@@ -784,11 +709,11 @@
     /* PREGUNTAS FRECUENTES */
 
     .prefre__titulo {
-        font-size: 35px;
+        font-size: 60px;
     }
 
     .prefre__linea {
-        border-top: 2px solid rgb(255, 162, 255);
+        border-top: 1px solid rgb(255, 162, 255);
         margin: 0 80px;
         margin-top: -25px;
     }
@@ -819,8 +744,8 @@
     }
 
     .prefre__pregunta {
-        font-size: 1.5em;
-        font-weight: 800;
+        font-size: 1.3em;
+        font-weight: 600;
         text-align: center;
     }
     
@@ -832,11 +757,11 @@
     /* RESEÑAS */
 
     .reseñas__titulo {
-        font-size: 35px;
+        font-size: 60px;
     }
 
     .reseñas__linea {
-        border-top: 2px solid rgb(255, 162, 255);
+        border-top: 1px solid rgb(255, 162, 255);
         margin: 0 80px;
         margin-top: -25px;
     }
@@ -854,11 +779,11 @@
     /* CONTACTO */
 
     .contacto__titulo {
-        font-size: 35px;
+        font-size: 60px;
     }
 
     .contacto__linea {
-        border-top: 2px solid rgb(255, 162, 255);
+        border-top: 1px solid rgb(255, 162, 255);
         margin: 0 80px;
         margin-top: -25px;
     }
@@ -905,13 +830,13 @@
     .contacto__info p {
         font-size: 1em;
         text-align: center;
-        letter-spacing: 0.9px;
-        line-height: 25px;
+        letter-spacing: normal;
+        line-height: 20px;
     }
 
     .contacto__info input {
         padding: 0 10px;
-        font-size: 1em;
+        font-size: .8em;
     }
 
     .formulario {
@@ -1039,177 +964,149 @@
 
     /* MENÚ */
 
-    .logo img {
+    .navbar-toggler-icon {
+        color: none;
+    }
+
+    .nav-item { 
+        text-align: right;
+    }
+
+    .boton--whatsapp {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .footer__links { 
+        display: none;
+    }
+
+    .footer__logo {
         width: 100px;
-        margin-top: 5px;
-        margin-left: 15px;
     }
 
-    .menu__lineas {
-        display: block;
-        font-size: 20px;
-        margin-right: 10px;
-    }
-
-    .menu__lineas i {
-        color: rgb(255, 162, 255);
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .menu:target {
-        display: block;
-    }
-
-    .menu__enlaces--cerrado {
-        display: block;
-    }
-
-    .menu {
-        background-color: white;
-        height: 100vh;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-    .menu__enlaces {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        width: 100%;
-    }
-
-    .menu .menu__enlaces li {
-        font-size: 1em;
-        margin: 0 10px;
-        padding-top: 10px;
-    }
-
-    .menu__cerrar {
-        margin-left: 20%;
-        font-size: 25px;
-        font-family: 'Permanent Marker', cursive;
-        color: rgb(255, 162, 255);
-    }
-
-    .menu__enlaces li:hover {
-        background: none;
-    }
-
-    .menu__enlaces .menu--activo a {
-        background: none;
-        border-bottom: 1px solid rgb(33, 243, 250);
-        padding: 0;
-        border-radius: 0;
-    }
-
-    .boton__contenedor .boton--whatsapp {
-        display: none;
+    .text-muted {
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
     }
 
     /* INICIO */
 
-    .sobreMi__titulo {
-        /* Hola, */
-        font-size: 40px;
+    .navbar-brand img {
+        width: 100px;
     }
 
-    .sobreMi__titulo1 {
-        /* soy Anto */
-        font-size: 60px;
+    .imagen__inicio {
+        width: 100%;
+        display: inline-block;
     }
 
-    .sobreMi__linea {
-        border-top: 1px solid rgb(255, 162, 255);
-        margin: 0 10px;
-        margin-top: -10px;
-    }
-
-    .sobreMi__contenedor {
-        /* Contenedor */
+    .col-6 {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
     }
 
-    .sobreMi__texto {
-        /* Texto */
-        font-size: 1em;
-        width: 95%;
-        height: auto;
-        line-height: 140%;
-        margin-right: 0;
-        padding: 20px 20px;
-        margin-bottom: 0;
-    }
-
-    .sobreMi__foto {
-        /* Imagen */
-        width: 95%;
-        margin-top: 5px;
-        height: auto;
-        object-fit: cover;
-        margin-left: 0;
-    }
-
-    .miRinconcito__contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 30px auto;
-    }
-
-    .miRinconcito__imagen {
-        width: 95%;
-        margin-bottom: -10px;
-    }
-
-    .miRinconcito__imagen1 {
-        width: 95%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .miRinconcito__titulo {
-        font-size: 20px;
-        height: 100%;
-        width: 95%;
-        line-height: 40px;
-        padding: 10px;
-        margin-bottom: -5px;
-    }
-
-    .btn {
-        grid-area: a;
+    .titulo__inicio {
+        font-size: 70px ;
+        left: 20%;
+        margin: auto;
+        margin-top: 200px;
+        margin-bottom: 10px;
         text-align: center;
-        border: none;
-        font-family: 'Poiret One', cursive;
-        text-decoration: none;
-        font-size: 20px;
-        color: black;
-        background-color: #a6cada;
-        font-weight: 900;
-        border-radius: 10px;
-        margin-top: -5px;
-        padding: 30px 0 30px 0;
-        align-self: center;
-        box-shadow: 0 -6px 0 rgb(252, 199, 247);
+    }
+
+    .sobreMi__inicio {
+        margin-right: 0;
+        margin: auto;
+        padding-top: 200px;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .redes__inicio {
+        background: white;
+        height: auto;
+        padding: 0;
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-5 {
+        width: 100%;
+    }
+
+    .redes__titulo {
+        font-size: 2.4rem;
+        font-family: 'Gruffly', cursive;
+        margin-left: 0%;
+    }
+
+    .redes__imagen {
+        display: none;
+    }
+
+    .tarjetas__inicio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video__contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video__inicio {
         width: 95%;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container { 
+        width: auto;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .tarjetas__inicio {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .tarjetas__boton {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .seguime__redes {
+        padding: 30px 0;
+    }
+
+    .seguime__redes i {
+        font-size: 30px;
     }
 
     /* MI ARTE */
 
     .miArte__titulo {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .miArte__linea {
@@ -1305,14 +1202,23 @@
         width: 90%;
     }
 
+    .form-floating {
+        width: 90%;
+    }
+
     #floatingTextarea2 {
         margin: auto;
         margin-top: 20px;
     }
 
+    .form-floating>label {  
+        left: 5px;
+        top: 10px;
+    }
+
     .btn1 {
         margin-top: 10px;
-        width: 90%;
+        width: 80%;
     }
 
     .miArte__subtitulo {
@@ -1323,7 +1229,7 @@
     /* PEDIDOS */
 
     .pedidos__titulo {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .pedidos__linea {
@@ -1346,6 +1252,7 @@
     .pedidos__contenedor {
         height: 100%;
         width: 95%;
+        padding-bottom: 20px;
     }
 
     .pedidos__pregunta {
@@ -1359,7 +1266,6 @@
     .pedidos__respuesta {
         margin-bottom: 50px;
         font-size: 1em;
-        font-weight: 800;
         text-align: center;
         line-height: 1.3em;
     }
@@ -1373,7 +1279,7 @@
     /* PREGUNTAS FRECUENTES */
 
     .prefre__titulo {
-        font-size: 27px;
+        font-size: 40px;
     }
 
     .prefre__linea {
@@ -1411,7 +1317,7 @@
     /* RESEÑAS */
 
     .reseñas__titulo {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .reseñas__linea {
@@ -1433,7 +1339,7 @@
     /* CONTACTO */
 
     .contacto__titulo {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .contacto__linea {
@@ -1491,13 +1397,13 @@
     .contacto__info p {
         font-size: 1em;
         text-align: center;
-        letter-spacing: 0.9px;
-        line-height: 25px;
+        letter-spacing: normal;
+        line-height: 20px;
     }
 
     .contacto__info input {
-        padding: 0 10px;
-        font-size: 1em;
+        padding: 10px 10px;
+        font-size: .8em;
     }
 
     .formulario {
@@ -1534,106 +1440,6 @@
         width: auto;
         padding: 15px;
         margin: 5px;
-    }
-
-    .footer__contenedor {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer__box {
-        font-family: 'Poiret One', cursive;
-        font-weight: 900;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer__contenido {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-        align-content: center;
-    }
-
-    .footer__contenido1 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        align-content: center;
-    }
-
-    .footer__contenido .footer__logo {
-        align-self: center;
-    }
-
-    .footer__contenido .footer__logo img {
-        /* Logo AP */
-        width: 120px;
-    }
-
-    .footer__contenido .footer__texto {
-        /* Emprendimiento personal */
-        font-family: 'Poiret One', cursive;
-        font-weight: 900;
-        font-size: 15px;
-        color: dimgray;
-        text-align: center;
-        max-width: 80%;
-        margin-top: 20px;
-    }
-
-    .footer__contenido1 h2 {
-        /* Conectá Conmigo */
-        font-weight: 700;
-        font-family: 'Poiret One', cursive;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        font-size: 22px;
-        border-bottom: 1.5px solid rgb(255, 162, 255);
-        text-align: center;
-    }
-
-    .footer__box .fa-brands {
-        /* Iconos Redes Sociales */
-        margin-right: 10px;
-        margin-bottom: 20px;
-        color: rgb(0, 0, 0);
-        font-size: 15px;
-    }
-
-    .footer__box .fa-envelope {
-        /* Icono Email */
-        margin-right: 10px;
-        margin-bottom: 20px;
-        color: rgb(0, 0, 0);
-        font-size: 15px;
-    }
-
-    .footer__box a {
-        text-decoration: none;
-        color: dimgray;
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .footer__copyright {
-        max-width: auto;
-        margin: auto;
-        text-align: center;
-        padding: 10px 0 10px 0;
-    }
-
-    .footer__copyright p {
-        /* Antonela Poveda Arte - Argentina - © 2022 */
-        font-family: 'Poiret One', cursive;
-        margin-top: 15px;
-        margin-bottom: 0;
-        font-weight: 800;
-        font-size: 12px;
     }
 
 }

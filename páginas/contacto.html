@@ -11,43 +11,60 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Pacifico&family=Permanent+Marker&family=Poiret+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Homemade+Apple&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100&family=Pacifico&family=Permanent+Marker&family=Poiret+One&display=swap" rel="stylesheet">    <!-- Michal Snik -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Michal Snik -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@51.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Estilo propio -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="../index.html"><img src="../imágenes/logo-ap5.png" alt="Logo AP arte"></a>
-        </div>
+    <header>
         <div>
-            <a class="menu__lineas" href="#abierto"><i class="fa-solid fa-bars"></i></a>
+            <nav class="navbar navbar1 navbar-expand-lg navbar-dark bg-black">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../imágenes/logo-ap3.png" alt="Logo AP Arte"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./mi-arte.html">MI ARTE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pedidos.html">PEDIDOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./preguntas-habituales.html">PREGUNTAS FRECUENTES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./reseñas.html">RESEÑAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="Contacto" href="./contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <nav class="menu" id="abierto">
-            <ul class="menu__enlaces">
-                <li><a class="menu__enlaces--cerrado" href="#cerrado"><span class="menu__cerrar">&#10006</span></a></li>
-                <li class="hvr-bounce-to-right"><a href="../index.html">Inicio</a></li>
-                <li class="hvr-bounce-to-right"><a href="./mi-arte.html">Mi Arte</a></li>
-                <li class="hvr-bounce-to-right"><a href="./pedidos.html">Pedidos</a></li>
-                <li class="hvr-bounce-to-right"><a href="./preguntas-habituales.html">Preguntas Frecuentes</a></li>
-                <li class="hvr-bounce-to-right"><a href="./reseñas.html">Reseñas</a></li>
-                <li class="hvr-bounce-to-right menu--activo"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <section>
             <div class="contacto">
-                <h1 class="contacto__titulo">Contáctame 🌞</h1>
+                <h1 class="contacto__titulo">🌞</h1>
                 <div class="contacto__linea"></div>
                 <div class="contacto__redes">
                     <div class="contacto__email">
@@ -55,7 +72,7 @@
                             <i class="fa-solid fa-square-envelope"></i>
                         </div>
                         <div class="contacto__info">
-                            <p>Si tenés dudas o necesitás ayuda, esceribime a mí correo electrónico.</p>
+                            <p>Si tenés dudas o necesitás ayuda, escribime a mí correo electrónico.</p>
                             <input type="button" value="apovedacuadros@gmail.com">
                         </div>
                     </div>
@@ -108,36 +125,29 @@
                     </form>
                 </div>
         </section>
+        <div class="boton__contenedor">
+            <a href="https://api.whatsapp.com/send?phone=5492395413096" target="_blank"><img class="boton--whatsapp"
+                    src="../imágenes/icono-whatsapp4.png" alt="Icono Whatsapp"></a>
+        </div>
     </main>
 
-    <footer>
-        <div class="footer__contenedor">
-            <div class="footer__box">
-                <div class="footer__contenido">
-                    <div class="footer__logo">
-                        <img src="../imágenes/logo-ap5.png" alt="Logo AP cuadros">
-                    </div>
-                    <div class="footer__texto">
-                        <p>Emprendimiento personal que comenzó con mucho 💕 y 💪 en el 2021</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__box">
-                <div class="footer__contenido1">
-                    <h2>Conectá Conmigo</h2>
-                    <a href="mailto:apovedacuadros@gmail.com"><i
-                            class="fa-solid fa-envelope"></i>apovedacuadros@gmail.com</a>
-                    <a href="https://www.instagram.com/ap.cuadros/" target="_blank"><i
-                            class="fa-brands fa-instagram"></i>@apcuadros</a>
-                    <a href="https://api.whatsapp.com/send?phone=5492395413096" target="_blank"><i
-                            class="fa-brands fa-whatsapp"></i>+5492395413095</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer__copyright">
-            <hr>
-            <p><b>Antonela Poveda Arte</b> - Argentina - © 2022</p>
-        </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-6 border-top footer">
+        <div class="container"></div>
+        <p class="col-md-5 mb-0 text-muted">Emprendimiento personal que comenzó con mucho 💕 y 💪 en el 2021</p>
+
+        <a href="#"
+            class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img class="footer__logo" src="../imágenes/logo-ap3.png" alt="Logo AP Arte">
+        </a>
+
+        <ul class="nav col-md-5 justify-content-end footer__links">
+            <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="./mi-arte.html" class="nav-link px-2 text-muted">Mi Arte</a></li>
+            <li class="nav-item"><a href="./pedidos.html" class="nav-link px-2 text-muted">Pedidos</a></li>
+            <li class="nav-item"><a href="./preguntas-habituales.html" class="nav-link px-2 text-muted">Preguntas Frecuentes</a></li>
+            <li class="nav-item"><a href="./reseñas.html" class="nav-link px-2 text-muted">Reseñas</a></li>
+            <li class="nav-item"><a href="./contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+        </ul>
     </footer>
 
     <!-- Michal Snik -->

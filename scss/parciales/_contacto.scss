@@ -5,17 +5,17 @@
     margin-top: 50px;
     margin-bottom: 40px;
     font-family: 'Pacifico', cursive;
-    font-size: 50px;
+    font-size: 60px;
     text-shadow: 4px 4px rgb(33, 243, 250);
     font-weight: 800;
 }
 
 .contacto__linea {
-    border-top: 3px solid rgb(255, 162, 255);
+    border-top: 1px solid rgb(255, 162, 255);
     height: 0;
     padding-top: 0;
     padding-bottom: 60px;
-    margin: 0 300px 0 300px;
+    margin: 0 500px 0 500px;
 }
 
 .contacto__redes {
@@ -35,7 +35,7 @@
     width: 300px;
     position: relative;
     margin: 20px;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 10px;
 }
 
@@ -103,7 +103,6 @@
     width: 100%;
     height: 220px;
     color: black;
-    font-weight: 900;
     background-color: #EFF3F5;
     padding: 20px;
     margin-top: -220px;
@@ -148,21 +147,21 @@
 }
 
 .contacto__info p {
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: center;
-    letter-spacing: 0.9px;
 }
 
 .contacto__info input {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: rgb(252, 199, 247);
-    font-size: 1.1em;
+    /* background-color: rgb(252, 199, 247); */
+    font-size: 1em;
     border: none;
     border-radius: 5px;
     text-align: center;
-    font-weight: 800;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Montserrat', cursive;
+    font-weight: 600;
+    cursor: none;
 }
 
 .formulario {
@@ -200,20 +199,22 @@
 }
 
 .formulario__item {
-    font-size: 30px;
     font-family: 'Poiret One', cursive;
 }
 
 .formulario__item input,
 textarea {
     color: rgb(0, 0, 0);
-    /* background-color: #fdc8ff; */
     width: 500px;
     padding: 20px;
     margin: 10px;
     border: none;
-    font-family: 'Poiret One', cursive;
-    font-weight: 900;
+    font-family: 'Montserrat', cursive;
+}
+
+button, input, optgroup, select, textarea {
+    font-size: 15px;
+    line-height: normal;
 }
 
 .formulario__enviar .btn3 {
@@ -223,9 +224,9 @@ textarea {
     padding: 20px;
     margin: 5px;
     border: none;
-    font-family: 'Poiret One', cursive;
-    font-weight: 1000;
-    letter-spacing: 3px;
+    font-family: 'Montserrat', cursive;
+    font-weight: 600;
+    letter-spacing: 1.5px;
     cursor: pointer;
 }
 
