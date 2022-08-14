@@ -42,7 +42,6 @@
 
     .imagen__inicio {
         width: 100%;
-        display: inline-block;
     }
 
     .col-6 {
@@ -874,88 +873,6 @@
         padding: 15px;
         margin: 5px;
     }
-
-    .footer__box {
-        font-family: 'Poiret One', cursive;
-        font-weight: 900;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-items: space-between;
-        /* padding-left: 80px; */
-    }
-
-    .footer__contenido {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-bottom: 30px;
-        justify-content: space-between;
-        align-content: center;
-        margin-left: 50px;
-    }
-
-    .footer__contenido1 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: center;
-    }
-
-    .footer__logo img {
-        /* Logo AP */
-        width: 120px;
-    }
-
-    .footer__contenido .footer__texto {
-        /* Emprendimiento personal */
-        font-family: 'Poiret One', cursive;
-        font-weight: 900;
-        font-size: 15px;
-        color: dimgray;
-        max-width: 90%;
-        margin-top: 10px;
-    }
-
-    .footer__contenido1 h2 {
-        /* Conectá Conmigo */
-        font-weight: 700;
-        font-family: 'Poiret One', cursive;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        font-size: 22px;
-    }
-
-    .footer__box .fa-brands {
-        /* Iconos Redes Sociales */
-        margin-right: 10px;
-        margin-bottom: 20px;
-        color: rgb(0, 0, 0);
-        font-size: 15px;
-    }
-
-    .footer__box .fa-envelope {
-        /* Icono Email */
-        margin-right: 10px;
-        margin-bottom: 20px;
-        color: rgb(0, 0, 0);
-        font-size: 15px;
-    }
-
-    .footer__box a {
-        text-decoration: none;
-        color: dimgray;
-        font-size: 15px;
-    }
-
-    .footer__copyright p {
-        /* Antonela Poveda Arte - Argentina - © 2022 */
-        font-family: 'Poiret One', cursive;
-        margin-top: 15px;
-        font-weight: 800;
-        font-size: 15px;
-    }
 }
 
 /* MEDIA QUERY CELULAR */
@@ -963,10 +880,6 @@
 @media screen and (max-width: 600px) {
 
     /* MENÚ */
-
-    .navbar-toggler-icon {
-        color: none;
-    }
 
     .nav-item { 
         text-align: right;
@@ -1006,13 +919,13 @@
 
     .imagen__inicio {
         width: 100%;
-        display: inline-block;
     }
 
     .col-6 {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 95%;
     }
 
     .titulo__inicio {
@@ -1199,7 +1112,7 @@
     }
 
     .col-6 {
-        width: 90%;
+        width: 95%;
     }
 
     .form-floating {
@@ -1218,7 +1131,7 @@
 
     .btn1 {
         margin-top: 10px;
-        width: 80%;
+        width: 85%;
     }
 
     .miArte__subtitulo {
@@ -1427,6 +1340,7 @@
         width: auto;
         padding: 15px;
         margin: 5px;
+        font-size: 12px;
     }
 
     .formulario__enviar {
@@ -1440,6 +1354,7 @@
         width: auto;
         padding: 15px;
         margin: 5px;
+        font-size: 12px;
     }
 
 }
