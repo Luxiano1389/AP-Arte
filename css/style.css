@@ -87,21 +87,6 @@
 }
 
 /* Sección Sobre Mí */
-@font-face {
-  font-family: 'Brush King';
-  src: url(/fonts/brushKing.otf);
-}
-
-@font-face {
-  font-family: 'Daisy Days';
-  src: url(/fonts/daisyDays.ttf);
-}
-
-@font-face {
-  font-family: 'Gruffly';
-  src: url(/fonts/gruffly.ttf);
-}
-
 .contenedor__inicio1 {
   margin-left: 0;
   padding-left: 0;
@@ -116,18 +101,20 @@
 }
 
 .titulo__inicio {
-  font-family: 'Daisy Days';
-  font-size: 200px;
+  font-family: 'Permanent Marker';
+  font-size: 180px;
   line-height: 1.1em;
   position: absolute;
   margin-top: 50px;
   left: 450px;
   color: white;
   text-align: right;
+  text-shadow: -1px -1px 0 #1ceeee, 1px -1px 0 #1ab8f7, -1px 1px 0 #1ceeee, 1px 1px 0 #1ceeee;
 }
 
 .punto__inicio {
   color: #fcc7f7;
+  text-shadow: none;
 }
 
 .sobreMi__inicio {
@@ -166,8 +153,8 @@
 }
 
 .redes__titulo {
-  font-size: 4rem;
-  font-family: 'Dawning of a new day', cursive;
+  font-size: 3.5rem;
+  font-family: 'Permanent Marker', cursive;
   margin-left: 0%;
 }
 
@@ -179,6 +166,7 @@
   object-fit: cover;
   width: 100%;
   border-radius: 20px;
+  width: 400px;
 }
 
 .fa-instagram {
@@ -1076,7 +1064,7 @@ footer {
   text-transform: uppercase;
   width: 700px;
   letter-spacing: 2px;
-  color: #4b4a4a;
+  color: black;
   margin-bottom: 20px;
   font-size: 1.4em;
   font-weight: 600;
@@ -1239,7 +1227,6 @@ ul {
 
 .prefre__respuesta ul,
 li {
-  /* line-height: 1.4em; */
   padding-bottom: 3px;
 }
 
@@ -1622,7 +1609,8 @@ textarea:hover {
   }
   .titulo__inicio {
     font-size: 70px;
-    left: 30%;
+    left: 20%;
+    right: 20%;
     margin: auto;
     margin-top: 200px;
     margin-bottom: 10px;
@@ -1654,7 +1642,6 @@ textarea:hover {
   }
   .redes__titulo {
     font-size: 2.4rem;
-    font-family: 'Gruffly', cursive;
     margin-left: 0%;
   }
   .redes__imagen {
@@ -1678,7 +1665,7 @@ textarea:hover {
     margin-bottom: 10px;
   }
   .container {
-    width: 100%;
+    max-width: 100%;
   }
   .card {
     width: 90%;
@@ -1973,8 +1960,7 @@ textarea:hover {
     width: 100px;
   }
   .imagen__inicio {
-    width: 700px;
-    display: inline-block;
+    width: 650px;
   }
   .titulo__inicio {
     font-size: 70px;
@@ -1982,7 +1968,7 @@ textarea:hover {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
   }
   .sobreMi__inicio {
     margin-right: 0;
@@ -2010,7 +1996,6 @@ textarea:hover {
   }
   .redes__titulo {
     font-size: 2.6rem;
-    font-family: 'Gruffly', cursive;
     margin-left: 0%;
     margin-bottom: 30px;
   }
@@ -2035,7 +2020,7 @@ textarea:hover {
     margin-bottom: 10px;
   }
   .container {
-    width: 100%;
+    max-width: 100%;
   }
   .card {
     width: 90%;
@@ -2331,17 +2316,18 @@ textarea:hover {
     width: 95%;
   }
   .titulo__inicio {
-    font-size: 70px;
-    left: 20%;
+    font-size: 50px;
+    left: 15%;
+    right: 15%;
     margin: auto;
-    margin-top: 200px;
-    margin-bottom: 10px;
+    margin-top: 150px;
+    margin-bottom: 0;
     text-align: center;
   }
   .sobreMi__inicio {
     margin-right: 0;
     margin: auto;
-    padding-top: 200px;
+    padding-top: 150px;
     font-size: 1rem;
     line-height: 1.2rem;
     text-align: justify;
@@ -2361,7 +2347,6 @@ textarea:hover {
   }
   .redes__titulo {
     font-size: 2.4rem;
-    font-family: 'Gruffly', cursive;
     margin-left: 0%;
   }
   .redes__imagen {
@@ -2566,7 +2551,7 @@ textarea:hover {
   }
   .prefre__pregunta {
     font-size: 1.3em;
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
   }
   .prefre__respuesta {

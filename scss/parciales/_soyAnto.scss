@@ -1,18 +1,4 @@
 /* Sección Sobre Mí */
-@font-face {
-  font-family: 'Brush King';
-  src: url(/fonts/brushKing.otf);
-}
-
-@font-face {
-  font-family: 'Daisy Days';
-  src: url(/fonts/daisyDays.ttf);
-}
-
-@font-face {
-  font-family: 'Gruffly';
-  src: url(/fonts/gruffly.ttf);
-}
 
 .contenedor__inicio1 {
   margin-left: 0;
@@ -28,18 +14,24 @@
 }
 
 .titulo__inicio {
-  font-family: 'Daisy Days';
-  font-size: 200px;
+  font-family: 'Permanent Marker';
+  font-size: 180px;
   line-height: 1.1em;
   position: absolute;
   margin-top: 50px;
   left: 450px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: right;
+  text-shadow:
+		-1px -1px 0 #1ceeee,
+		1px -1px 0 #1ab8f7,
+		-1px 1px 0 #1ceeee,
+		1px 1px 0 #1ceeee;
 }
 
 .punto__inicio {
   color: #fcc7f7;
+  text-shadow: none;
 }
 
 .sobreMi__inicio {
@@ -78,8 +70,8 @@
 }
 
 .redes__titulo {
-  font-size: 4rem;
-  font-family: 'Dawning of a new day', cursive;
+  font-size: 3.5rem;
+  font-family: 'Permanent Marker', cursive;
   margin-left: 0%;
 }
 
@@ -91,6 +83,7 @@
   object-fit: cover;
   width: 100%;
   border-radius: 20px;
+  width: 400px;
 }
 
 .fa-instagram {

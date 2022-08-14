@@ -52,7 +52,8 @@
 
     .titulo__inicio {
         font-size: 70px ;
-        left: 30%;
+        left: 20%;
+        right: 20%;
         margin: auto;
         margin-top: 200px;
         margin-bottom: 10px;
@@ -89,7 +90,6 @@
 
     .redes__titulo {
         font-size: 2.4rem;
-        font-family: 'Gruffly', cursive;
         margin-left: 0%;
     }
 
@@ -118,7 +118,7 @@
     }
 
     .container { 
-        width: 100%;
+        max-width: 100% ;
     }
 
     .card {
@@ -487,8 +487,7 @@
     }
 
     .imagen__inicio {
-        width: 700px;
-        display: inline-block;
+        width: 650px;
     }
 
     .titulo__inicio {
@@ -497,7 +496,7 @@
         margin: auto;
         margin-top: 20px;
         margin-bottom: 10px;
-        text-align: center;
+        text-align: left;
     }
 
     .sobreMi__inicio {
@@ -530,7 +529,6 @@
 
     .redes__titulo {
         font-size: 2.6rem;
-        font-family: 'Gruffly', cursive;
         margin-left: 0%;
         margin-bottom: 30px;
     }
@@ -560,7 +558,7 @@
     }
 
     .container { 
-        width: 100%;
+        max-width: 100%;
     }
 
     .card {
@@ -929,18 +927,19 @@
     }
 
     .titulo__inicio {
-        font-size: 70px ;
-        left: 20%;
+        font-size: 50px;
+        left: 15%;
+        right: 15%;
         margin: auto;
-        margin-top: 200px;
-        margin-bottom: 10px;
+        margin-top: 150px;
+        margin-bottom: 0;
         text-align: center;
     }
 
     .sobreMi__inicio {
         margin-right: 0;
         margin: auto;
-        padding-top: 200px;
+        padding-top: 150px;
         font-size: 1rem;
         line-height: 1.2rem;
         text-align: justify;
@@ -963,7 +962,6 @@
 
     .redes__titulo {
         font-size: 2.4rem;
-        font-family: 'Gruffly', cursive;
         margin-left: 0%;
     }
 
@@ -1218,7 +1216,7 @@
 
     .prefre__pregunta {
         font-size: 1.3em;
-        font-weight: 800;
+        font-weight: 600;
         text-align: center;
     }
     
