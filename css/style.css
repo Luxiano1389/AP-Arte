@@ -79,7 +79,7 @@
 }
 
 .navbar-nav li {
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 .navbar-brand img {
@@ -102,14 +102,20 @@
 
 .titulo__inicio {
   font-family: 'Permanent Marker';
-  font-size: 180px;
+  font-size: 170px;
   line-height: 1.1em;
   position: absolute;
-  margin-top: 50px;
-  left: 450px;
+  margin-top: 4%;
+  left: 30%;
+  right: 5%;
   color: white;
   text-align: right;
   text-shadow: -1px -1px 0 #1ceeee, 1px -1px 0 #1ab8f7, -1px 1px 0 #1ceeee, 1px 1px 0 #1ceeee;
+  transition: all .6s;
+}
+
+.titulo__inicio:hover {
+  text-shadow: -1px -1px 0 #ee1cdc, 1px -1px 0 #fa35fa, -1px 1px 0 #f15dea, 1px 1px 0 #f162d2;
 }
 
 .punto__inicio {
@@ -169,6 +175,18 @@
   width: 400px;
 }
 
+.redes__contenedor {
+  justify-content: space-evenly;
+}
+
+.col-5 {
+  width: 45%;
+}
+
+.col-4 {
+  width: 30%;
+}
+
 .fa-instagram {
   font-size: 30px;
 }
@@ -184,6 +202,7 @@
   border-color: transparent;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.13);
   border: none;
+  min-width: 18rem;
 }
 
 @-webkit-keyframes hvr-bob {
@@ -271,13 +290,24 @@
   background-color: transparent;
 }
 
+.card-img-bottom {
+  object-fit: cover;
+  width: auto;
+  height: auto;
+}
+
 .card-text {
   height: 150px;
 }
 
 .tarjetas__inicio {
   margin-top: 40px;
-  gap: 20px;
+}
+
+.tarjetas__inicio1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .tarjetas__contenedor {
@@ -498,113 +528,6 @@
 }
 
 /* Footer */
-/* footer {
-    background-color: white;
-}
-
-.footer__contenedor {
-    display: flex;
-    flex-direction: row;
-    padding-top: 30px;
-}
-
-.footer__box {
-    font-family: 'Poiret One', cursive;
-    font-weight: 900;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.footer__contenido {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.footer__contenido1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: auto;
-} */
-/* .footer__logo img { */
-/* Logo AP */
-/* width: 150px; */
-/* }
-
-.footer__texto { */
-/* Emprendimiento personal */
-/* font-family: 'Poiret One', cursive;
-    font-weight: 900;
-    font-size: 18px;
-    color: dimgray;
-    text-align: justify;
-    max-width: 300px;
-    margin-top: 20px;
-}
-
-.footer__contenido1 h2 { */
-/* Conectá Conmigo */
-/* font-weight: 700;
-    font-family: 'Poiret One', cursive;
-    margin-bottom: 20px;
-    font-size: 25px;
-}
- */
-/* .footer__box .fa-brands { */
-/* Iconos Redes Sociales */
-/*  margin-right: 10px;
-    margin-bottom: 20px;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-}
-
-.footer__box .fa-envelope { */
-/* Icono Email */
-/* margin-right: 10px;
-    margin-bottom: 20px;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-}
-
-.footer__box a:hover {
-    opacity: 0.8;
-}
-
-.footer__box a {
-    text-decoration: none;
-    color: dimgray;
-    font-size: 17px;
-    max-width: 300px;
-}
-
-.footer__copyright {
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0;
-}
-
-.footer__copyright p { */
-/* Antonela Poveda Arte - Argentina - © 2022 */
-/*  font-family: 'Poiret One', cursive;
-    margin-top: 20px;
-    margin-bottom: 0;
-    padding-bottom: 16px;
-    font-weight: 800;
-}
-
-.footer__copyright hr { */
-/* Línea divisoria */
-/* border: none;
-    height: 3px;
-    background-color: rgb(255, 162, 255);
-    opacity: 1;
-} */
 footer {
   background-color: black;
   font-family: 'Montserrat', sans-serif;
@@ -614,6 +537,8 @@ footer {
 .text-muted {
   padding-right: 0px;
   padding-left: 20px;
+  color: white !important;
+  font-weight: 200;
 }
 
 .footer__logo {
@@ -980,7 +905,7 @@ footer {
 
 .miArte__texto {
   color: black;
-  font-size: 22px;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -988,10 +913,9 @@ footer {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: 'Poiret One', cursive;
-  font-weight: 900;
-  letter-spacing: 0px;
-  /* 0.9 antes de bootstrap */
+  font-family: 'Montserrat', cursive;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 .miArte__comentarios {
@@ -1001,15 +925,14 @@ footer {
 }
 
 .miArte__subtitulo {
-  font-family: 'Poiret One', cursive;
-  padding-top: 10px;
+  font-family: 'Montserrat', cursive;
+  margin-right: 180px;
 }
 
 .form-floating {
   font-family: 'Montserrat', cursive;
   font-weight: 500;
   font-size: 15px;
-  height: 100%;
 }
 
 .form-floating > label {
@@ -1018,11 +941,11 @@ footer {
 }
 
 #floatingTextarea2 {
-  margin-left: 10px;
   font-weight: 800;
   border-radius: 0;
   border: #a6d0e4 solid 2px;
   background-color: #fefffd;
+  margin: 0;
 }
 
 .btn1 {
@@ -1296,7 +1219,7 @@ body {
 }
 
 .accordion-header {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Montserrat', cursive;
 }
 
 .accordion-button {
@@ -1485,13 +1408,16 @@ body {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: transparent;
-  font-size: 1em;
+  font-size: 1.1em;
   border: none;
   border-radius: 5px;
   text-align: center;
   font-family: 'Montserrat', cursive;
   font-weight: 600;
-  cursor: none;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: text;
 }
 
 .formulario {
@@ -1600,7 +1526,13 @@ textarea:hover {
     width: 100px;
   }
   .imagen__inicio {
-    width: 100%;
+    width: 600px;
+    display: inline-block;
+    top: 5%;
+    left: 15%;
+    right: 15%;
+    margin-bottom: 10px;
+    border-radius: 20px;
   }
   .col-6 {
     display: flex;
@@ -1615,6 +1547,7 @@ textarea:hover {
     margin-top: 200px;
     margin-bottom: 10px;
     text-align: center;
+    text-shadow: -1px -1px 0 #888888, 1px -1px 0 #b1b1b1, -1px 1px 0 #a0a0a0, 1px 1px 0 #b1b1b1;
   }
   .sobreMi__inicio {
     margin-right: 0;
@@ -1634,7 +1567,7 @@ textarea:hover {
     display: flex;
     flex-direction: column;
   }
-  .col-3 {
+  .col-4 {
     width: auto;
   }
   .col-5 {
@@ -1746,6 +1679,7 @@ textarea:hover {
   .miArte__subtitulo {
     margin-bottom: 20px;
     text-align: center;
+    margin-right: 0;
   }
   /* PEDIDOS */
   .pedidos__titulo {
@@ -1755,6 +1689,9 @@ textarea:hover {
     border-top: 1px solid #ffa2ff;
     margin: 0 80px;
     margin-top: -25px;
+  }
+  .pedidos__video {
+    margin-bottom: 70px;
   }
   .pedidos__video video {
     height: 450px;
@@ -1768,6 +1705,8 @@ textarea:hover {
   .pedidos__contenedor {
     height: 100%;
     width: 95%;
+    padding-top: 70px;
+    padding-bottom: 20px;
   }
   .pedidos__pregunta {
     width: auto;
@@ -1806,6 +1745,9 @@ textarea:hover {
     transform-style: preserve-3d;
     transition: all 600ms;
     border-radius: 10px;
+  }
+  .prefre__contenedor {
+    padding: 70px 0;
   }
   .prefre__frontal--pregunta {
     text-align: center;
@@ -1959,21 +1901,31 @@ textarea:hover {
   .navbar-brand img {
     width: 100px;
   }
+  .imagen__contenedor {
+    display: flex;
+    justify-content: center;
+    width: 80% !important;
+  }
   .imagen__inicio {
-    width: 650px;
+    top: 5%;
+    left: 14%;
+    right: 15%;
+    border-radius: 20px;
   }
   .titulo__inicio {
-    font-size: 70px;
-    left: 6%;
+    font-size: 100px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
+    left: 20%;
+    right: 20%;
+    text-shadow: -1px -1px 0 #888888, 1px -1px 0 #b1b1b1, -1px 1px 0 #a0a0a0, 1px 1px 0 #b1b1b1;
   }
   .sobreMi__inicio {
     margin-right: 0;
     margin: auto;
-    padding-top: 200px;
+    padding-top: 275px;
     font-size: 1rem;
     line-height: 1.2rem;
     text-align: justify;
@@ -1988,7 +1940,7 @@ textarea:hover {
     display: flex;
     flex-direction: column;
   }
-  .col-3 {
+  .col-4 {
     width: auto;
   }
   .col-5 {
@@ -2013,7 +1965,7 @@ textarea:hover {
     align-items: center;
   }
   .video__inicio {
-    width: 95%;
+    width: 90%;
     border-radius: 20px;
     margin: auto;
     margin-top: 10px;
@@ -2072,6 +2024,10 @@ textarea:hover {
     width: 100%;
     margin-top: 0;
   }
+  .miArte__subtitulo {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
   .miArte__subtitulo h2 {
     font-size: 25px;
     text-align: center;
@@ -2092,7 +2048,6 @@ textarea:hover {
   }
   #floatingTextarea2 {
     margin: auto;
-    margin-top: 50px;
   }
   .btn1 {
     margin-top: 10px;
@@ -2119,6 +2074,13 @@ textarea:hover {
   .pedidos__contenedor {
     height: 100%;
     width: 95%;
+  }
+  .pedidos__video {
+    margin-bottom: 70px;
+  }
+  .pedidos__contenedor {
+    padding-top: 70px;
+    padding-bottom: 20px;
   }
   .pedidos__pregunta {
     width: auto;
@@ -2157,6 +2119,9 @@ textarea:hover {
     transform-style: preserve-3d;
     transition: all 600ms;
     border-radius: 10px;
+  }
+  .prefre__contenedor {
+    padding: 70px 0;
   }
   .prefre__frontal--pregunta {
     text-align: center;
@@ -2306,8 +2271,16 @@ textarea:hover {
   .navbar-brand img {
     width: 100px;
   }
+  /* .imagen__contenedor {
+        display: flex;
+    } */
   .imagen__inicio {
     width: 100%;
+    display: inline-block;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    border-radius: 20px;
   }
   .col-6 {
     display: flex;
@@ -2316,13 +2289,14 @@ textarea:hover {
     width: 95%;
   }
   .titulo__inicio {
-    font-size: 50px;
+    font-size: 300%;
     left: 15%;
     right: 15%;
     margin: auto;
     margin-top: 150px;
     margin-bottom: 0;
     text-align: center;
+    text-shadow: -1px -1px 0 #888888, 1px -1px 0 #b1b1b1, -1px 1px 0 #a0a0a0, 1px 1px 0 #b1b1b1;
   }
   .sobreMi__inicio {
     margin-right: 0;
@@ -2342,12 +2316,14 @@ textarea:hover {
     display: flex;
     flex-direction: column;
   }
+  .col-4 {
+    width: 100%;
+  }
   .col-5 {
     width: 100%;
   }
   .redes__titulo {
     font-size: 2.4rem;
-    margin-left: 0%;
   }
   .redes__imagen {
     display: none;
@@ -2486,6 +2462,7 @@ textarea:hover {
   .miArte__subtitulo {
     margin-bottom: 20px;
     text-align: center;
+    margin-right: 0;
   }
   /* PEDIDOS */
   .pedidos__titulo {
@@ -2502,12 +2479,16 @@ textarea:hover {
     justify-content: center;
     align-items: center;
   }
+  .pedidos__video {
+    margin-bottom: 70px;
+  }
   .pedidos__video video {
     height: 400px;
   }
   .pedidos__contenedor {
     height: 100%;
     width: 95%;
+    padding-top: 70px;
     padding-bottom: 20px;
   }
   .pedidos__pregunta {
@@ -2545,6 +2526,9 @@ textarea:hover {
   .prefre {
     width: auto;
     height: 350px;
+  }
+  .prefre__contenedor {
+    padding: 70px 0;
   }
   .prefre__frontal--respuesta {
     padding: 0;

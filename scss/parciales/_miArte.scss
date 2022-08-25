@@ -298,7 +298,7 @@ $clase: miArte__imagen;
 
 .miArte__texto {
     color: rgb(0, 0, 0);
-    font-size: 22px;
+    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -306,9 +306,9 @@ $clase: miArte__imagen;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'Poiret One', cursive;
-    font-weight: 900;
-    letter-spacing: 0px; /* 0.9 antes de bootstrap */
+    font-family: 'Montserrat', cursive;
+    font-weight: 600;
+    letter-spacing: 0; 
   }
 
 .miArte__comentarios {
@@ -318,15 +318,14 @@ $clase: miArte__imagen;
 }
 
 .miArte__subtitulo {
-    font-family: 'Poiret One', cursive;
-    padding-top: 10px;
+    font-family: 'Montserrat', cursive;
+    margin-right: 180px;
 }
 
 .form-floating {
     font-family: 'Montserrat', cursive;
     font-weight: 500;
     font-size: 15px;
-    height: 100%;
 }
 
 .form-floating>label {  
@@ -335,11 +334,11 @@ $clase: miArte__imagen;
 }
 
 #floatingTextarea2 {
-    margin-left: 10px;
     font-weight: 800;
     border-radius: 0;
     border:#a6d0e4 solid 2px;
     background-color: rgb(254, 255, 253);
+    margin: 0;
 }
 
 .btn1 {

@@ -41,7 +41,13 @@
     }
 
     .imagen__inicio {
-        width: 100%;
+        width: 600px;
+        display: inline-block;
+        top: 5%;
+        left: 15%;
+        right: 15%;
+        margin-bottom: 10px;
+        border-radius: 20px;
     }
 
     .col-6 {
@@ -58,6 +64,11 @@
         margin-top: 200px;
         margin-bottom: 10px;
         text-align: center;
+        text-shadow:
+		-1px -1px 0 #888888,
+		1px -1px 0 #b1b1b1,
+		-1px 1px 0 #a0a0a0,
+		1px 1px 0 #b1b1b1;
     }
 
     .sobreMi__inicio {
@@ -80,7 +91,7 @@
         flex-direction: column;
     }
 
-    .col-3 {
+    .col-4 {
         width: auto;
     }
 
@@ -219,6 +230,7 @@
     .miArte__subtitulo {
         margin-bottom: 20px;
         text-align: center;
+        margin-right: 0;
     }
 
     /* PEDIDOS */
@@ -233,6 +245,10 @@
         margin-top: -25px;
     }
 
+    .pedidos__video {
+        margin-bottom: 70px;
+    }
+
     .pedidos__video video {
         height: 450px;
     }
@@ -243,10 +259,12 @@
         justify-content: center;
         align-items: center;
     }
-
+    
     .pedidos__contenedor {
         height: 100%;
         width: 95%;
+        padding-top: 70px;
+        padding-bottom: 20px;
     }
 
     .pedidos__pregunta {
@@ -293,6 +311,10 @@
         transform-style: preserve-3d;
         transition: all 600ms;
         border-radius: 10px;
+    }
+
+    .prefre__contenedor {
+        padding: 70px 0;
     }
 
     .prefre__frontal--pregunta {
@@ -486,23 +508,38 @@
         width: 100px;
     }
 
+    .imagen__contenedor {
+        display: flex;
+        justify-content: center;
+        width: 80% !important;
+    }
+
     .imagen__inicio {
-        width: 650px;
+        top: 5%;
+        left: 14%;
+        right: 15%;
+        border-radius: 20px;
     }
 
     .titulo__inicio {
-        font-size: 70px ;
-        left: 6%;
+        font-size: 100px ;
         margin: auto;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 10px;
-        text-align: left;
+        text-align: center;
+        left: 20%;
+        right: 20%;
+        text-shadow:
+		-1px -1px 0 #888888,
+		1px -1px 0 #b1b1b1,
+		-1px 1px 0 #a0a0a0,
+		1px 1px 0 #b1b1b1;
     }
 
     .sobreMi__inicio {
         margin-right: 0;
         margin: auto;
-        padding-top: 200px;
+        padding-top: 275px;
         font-size: 1rem;
         line-height: 1.2rem;
         text-align: justify;
@@ -519,7 +556,7 @@
         flex-direction: column;
     }
 
-    .col-3 {
+    .col-4 {
         width: auto;
     }
 
@@ -550,7 +587,7 @@
     }
 
     .video__inicio {
-        width: 95%;
+        width: 90%;
         border-radius: 20px;
         margin: auto;
         margin-top: 10px;
@@ -622,6 +659,11 @@
         margin-top: 0;
     }
 
+    .miArte__subtitulo { 
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
     .miArte__subtitulo h2 {
         font-size: 25px;
         text-align: center;
@@ -647,7 +689,6 @@
 
     #floatingTextarea2 {
         margin: auto;
-        margin-top: 50px;
     }
 
     .btn1 {
@@ -681,6 +722,15 @@
     .pedidos__contenedor {
         height: 100%;
         width: 95%;
+    }
+
+    .pedidos__video {
+        margin-bottom: 70px;
+    }
+
+    .pedidos__contenedor {
+        padding-top: 70px;
+        padding-bottom: 20px;
     }
 
     .pedidos__pregunta {
@@ -727,6 +777,10 @@
         transform-style: preserve-3d;
         transition: all 600ms;
         border-radius: 10px;
+    }
+
+    .prefre__contenedor {
+        padding: 70px 0;
     }
 
     .prefre__frontal--pregunta {
@@ -915,8 +969,17 @@
         width: 100px;
     }
 
+    /* .imagen__contenedor {
+        display: flex;
+    } */
+
     .imagen__inicio {
         width: 100%;
+        display: inline-block;
+        top: 5%;
+        left: 5%;
+        right: 5%;
+        border-radius: 20px;
     }
 
     .col-6 {
@@ -927,13 +990,18 @@
     }
 
     .titulo__inicio {
-        font-size: 50px;
+        font-size: 300%;
         left: 15%;
         right: 15%;
         margin: auto;
         margin-top: 150px;
         margin-bottom: 0;
         text-align: center;
+        text-shadow:
+		-1px -1px 0 #888888,
+		1px -1px 0 #b1b1b1,
+		-1px 1px 0 #a0a0a0,
+		1px 1px 0 #b1b1b1;
     }
 
     .sobreMi__inicio {
@@ -956,13 +1024,16 @@
         flex-direction: column;
     }
 
+    .col-4 {
+        width: 100%;
+    }
+
     .col-5 {
         width: 100%;
     }
 
     .redes__titulo {
         font-size: 2.4rem;
-        margin-left: 0%;
     }
 
     .redes__imagen {
@@ -1135,6 +1206,7 @@
     .miArte__subtitulo {
         margin-bottom: 20px;
         text-align: center;
+        margin-right: 0;
     }
 
     /* PEDIDOS */
@@ -1156,6 +1228,10 @@
         align-items: center;
     }
 
+    .pedidos__video {
+        margin-bottom: 70px;
+    }
+
     .pedidos__video video {
         height: 400px;
     }
@@ -1163,6 +1239,7 @@
     .pedidos__contenedor {
         height: 100%;
         width: 95%;
+        padding-top: 70px;
         padding-bottom: 20px;
     }
 
@@ -1210,6 +1287,10 @@
         height: 350px;
     }
 
+    .prefre__contenedor {
+        padding: 70px 0;
+    }
+
     .prefre__frontal--respuesta {
         padding: 0;
     }
@@ -1243,8 +1324,8 @@
     }
 
     .accordion-body {
-    font-size: 1rem;
-    line-height: 20px;
+        font-size: 1rem;
+        line-height: 20px;
     }
 
     /* CONTACTO */

@@ -15,11 +15,12 @@
 
 .titulo__inicio {
   font-family: 'Permanent Marker';
-  font-size: 180px;
+  font-size: 170px;
   line-height: 1.1em;
   position: absolute;
-  margin-top: 50px;
-  left: 450px;
+  margin-top: 4%;
+  left: 30%;
+  right: 5%;
   color: rgb(255, 255, 255);
   text-align: right;
   text-shadow:
@@ -27,6 +28,15 @@
 		1px -1px 0 #1ab8f7,
 		-1px 1px 0 #1ceeee,
 		1px 1px 0 #1ceeee;
+    transition: all .6s;
+}
+
+.titulo__inicio:hover {
+  text-shadow:
+  -1px -1px 0 #ee1cdc,
+  1px -1px 0 #fa35fa,
+  -1px 1px 0 #f15dea,
+  1px 1px 0 #f162d2;
 }
 
 .punto__inicio {
@@ -86,6 +96,18 @@
   width: 400px;
 }
 
+.redes__contenedor {
+  justify-content: space-evenly;
+}
+
+.col-5 {
+  width: 45%;
+}
+
+.col-4 {
+  width: 30%;
+}
+
 .fa-instagram {
   font-size: 30px;
 }
@@ -101,6 +123,7 @@
   border-color: transparent;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.13);
   border: none;
+  min-width: 18rem;
 }
 
 @-webkit-keyframes hvr-bob {
@@ -192,13 +215,24 @@
   background-color: transparent;
 }
 
+.card-img-bottom {
+  object-fit: cover;
+  width: auto;
+  height: auto;
+} 
+
 .card-text {
   height: 150px;
 }
 
 .tarjetas__inicio {
   margin-top: 40px;
-  gap: 20px;
+}
+
+.tarjetas__inicio1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .tarjetas__contenedor {

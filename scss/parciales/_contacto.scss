@@ -155,13 +155,16 @@
     margin-top: 20px;
     padding: 10px 20px;
     background-color: transparent;
-    font-size: 1em;
+    font-size: 1.1em;
     border: none;
     border-radius: 5px;
     text-align: center;
     font-family: 'Montserrat', cursive;
     font-weight: 600;
-    cursor: none;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: text;
 }
 
 .formulario {
